@@ -86,7 +86,7 @@ const addKeywordToCard = `
 async function execute() {
     try {
         console.log(`reading "table.sql" from "connect-pg-simple`);
-        const createSessions = fs.readFileSync('./node_modules/connect-pg-simple/table.sql');
+        const createSessions = fs.readFileSync('./node_modules/connect-pg-simple/table.sql').toString();
 
         console.log(`creating table "session"...`);
         await db.query(createSessions, []);
