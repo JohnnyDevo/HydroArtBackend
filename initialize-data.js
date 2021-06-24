@@ -1,5 +1,5 @@
 require('dotenv').config();
-const db = require('./db');
+const db = require('./models');
 const fs = require('fs');
 
 const createCards = `
@@ -85,6 +85,12 @@ const addKeywordToCard = `
 
 async function execute() {
     try {
+        console.log(`reading "table.sql" from "connect-pg-simple`);
+        const createSessions = fs.readFileSync('./node_modules/connect-pg-simple/table.sql');
+
+        console.log(`creating table "session"...`);
+        await db.query(createSessions, []);
+
         console.log(`creating table "cards"...`);
         await db.query(createCards, []);
 
