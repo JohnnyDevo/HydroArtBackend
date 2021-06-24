@@ -1,0 +1,74 @@
+{
+  "hydrologistmod:flow": {
+    "NAME": "Flow",
+    "DESCRIPTION": "When you Flow, you may discard any number of cards. You draw that many at the start of your next turn."
+  },
+  "fleeting": {
+    "NAME": "Fleeting",
+    "DESCRIPTION": "This card <span class=\"keyword\">Purges</span> and is removed from your deck on use."
+  },
+  "upgrade": {
+    "NAME": "Upgrade",
+    "DESCRIPTION": "Upgrading cards makes them more powerful. Cards can only be upgraded once."
+  },
+  "hydrologistmod:corporeal": {
+    "NAME": "Corporeal",
+    "DESCRIPTION": "A Corporeal card is any card that did not start the turn in your hand, draw pile, or discard pile."
+  },
+  "innate": {
+    "NAME": "Innate",
+    "DESCRIPTION": "Start each combat with this card in your hand."
+  },
+  "exhaust": {
+    "NAME": "Exhaust",
+    "DESCRIPTION": "Removed until end of combat."
+  },
+  "retain": {
+    "NAME": "Retain",
+    "DESCRIPTION": "Not discarded at the end of your turn."
+  },
+  "hydrologistmod:mutable": {
+    "NAME": "Mutable",
+    "DESCRIPTION": "When a card is <span class=\"keyword\">Transmuted,</span> any <span class=\"keyword\">Mutable</span> effect is passed on to the next card for the rest of combat."
+  },
+  "hydrologistmod:thermal shock": {
+    "NAME": "Thermal Shock",
+    "DESCRIPTION": "A Shocked enemy counts as both <span class=\"keyword\">Hot</span> and <span class=\"keyword\">Cool.</span> Applying any <span class=\"keyword\">Cold</span> or <span class=\"keyword\">Heat</span> to this enemy will instead increase this duration by 1 turn."
+  },
+  "hydrologistmod:cold": {
+    "NAME": "Cold",
+    "DESCRIPTION": "A <span class=\"keyword\">Cool</span> enemy deals 15% less damage with Attacks. If a <span class=\"keyword\">Cool</span> enemy becomes <span class=\"keyword\">Hot,</span> remove it, it loses triple its <span class=\"keyword\">Cool</span> amount in HP, and apply <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> for 1 turn."
+  },
+  "hydrologistmod:transmute": {
+    "NAME": "Transmute",
+    "DESCRIPTION": "Transforms a card in combat into any card of the same rarity available to your current run. The new card deals 1 more damage and gains 1 more <span class=\"keyword\">Block</span> for the rest of combat. This effect stacks."
+  },
+  "hydrologistmod:adaptive": {
+    "NAME": "Adaptive",
+    "DESCRIPTION": "An <span class=\"keyword\">Adaptive</span> X effect changes depending on the <span class=\"keyword\">Subtype</span> of the last card played this combat. NL <span class=\"keyword\">Ice:</span> apply X <span class=\"keyword\">Cold.</span> NL <span class=\"keyword\">Water:</span> gain 2X <span class=\"keyword\">Block.</span> NL <span class=\"keyword\">Steam:</span> apply X <span class=\"keyword\">Heat.</span>"
+  },
+  "[E]": {
+    "NAME": "[E]",
+    "DESCRIPTION": "Energy is used to play cards from your hand."
+  },
+  "hydrologistmod:ebbing": {
+    "NAME": "Ebbing",
+    "DESCRIPTION": "When an <span class=\"keyword\">Ebbing</span> card is discarded from your hand, play it."
+  },
+  "hydrologistmod:swappable": {
+    "NAME": "Swappable",
+    "DESCRIPTION": "A Swappable card is <span class=\"keyword\">Paired</span> with another card and, while selected, can be freely <span class=\"keyword\">Swapped</span> between the two by pressing #b"
+  },
+  "hydrologistmod:purity": {
+    "NAME": "Purity",
+    "DESCRIPTION": "Cards grow stronger through the <span class=\"keyword\">Transmutation</span> process. <span class=\"keyword\">Block</span> gain and damage dealt are increased this combat."
+  },
+  "block": {
+    "NAME": "Block",
+    "DESCRIPTION": "Until next turn, prevents damage."
+  },
+  "hydrologistmod:heat": {
+    "NAME": "Heat",
+    "DESCRIPTION": "A <span class=\"keyword\">Hot</span> enemy takes 30% increased damage from Attacks. If a <span class=\"keyword\">Hot</span> enemy becomes <span class=\"keyword\">Cool,</span> remove it, it loses triple its <span class=\"keyword\">Hot</span> amount in HP, and apply <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> for 1 turn."
+  }
+}
