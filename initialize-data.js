@@ -88,29 +88,29 @@ async function execute() {
         console.log(`reading "table.sql" from "connect-pg-simple`);
         const createSessions = fs.readFileSync('./node_modules/connect-pg-simple/table.sql').toString();
 
-        console.log(`creating table "session"...`);
+        console.log(`creating table "session"`);
         await db.query(createSessions, []);
 
-        console.log(`creating table "cards"...`);
+        console.log(`creating table "cards"`);
         await db.query(createCards, []);
 
-        console.log(`creating table "users"...`);
+        console.log(`creating table "users"`);
         await db.query(createUsers, []);
 
-        console.log(`creating table "keywords"...`);
+        console.log(`creating table "keywords"`);
         await db.query(createKeywords, []);
 
-        console.log(`creating table "art_submissions"...`);
+        console.log(`creating table "art_submissions"`);
         await db.query(createArtSubmissions, []);
 
-        console.log(`creating table "keywords_on_cards"...`);
+        console.log(`creating table "keywords_on_cards"`);
         await db.query(createKeywordsOnCards, []);
 
-        console.log("reading keyword data from .json...");
+        console.log("reading keyword data from .json");
         const keywordData = JSON.parse(fs.readFileSync('./exports/hydro-keywords.json'));
 
         for (const keyword in keywordData) {
-            console.log(`adding keyword ${keyword} to table...`);
+            console.log(`adding keyword ${keyword} to table`);
             await db.query(addKeyword, [
                 keyword,
                 keywordData[keyword]["NAME"],
@@ -118,11 +118,11 @@ async function execute() {
             ]);
         }
 
-        console.log("reading card data from .json...");
+        console.log("reading card data from .json");
         const cardData = JSON.parse(fs.readFileSync('./exports/hydro-cards.json'));
 
         for (const card in cardData) {
-            console.log(`adding ${card} to table...`);
+            console.log(`adding ${card} to table`);
             await db.query(addCard, [
                 card, //cardID
                 cardData[card]["NAME"],
