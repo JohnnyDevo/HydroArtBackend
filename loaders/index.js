@@ -1,7 +1,7 @@
-const expressLoader = require('./loadExpress');
-const authLoader = require('./loadAuth');
-const sessionLoader = require('./loadSession');
-const routesLoader = require('./loadRoutes');
+const { expressLoader } = require('./loadExpress');
+const { authLoader } = require('./loadAuth');
+const { sessionLoader } = require('./loadSession');
+const { routesLoader } = require('./loadRoutes');
 
 module.exports = {
     init: function() {
