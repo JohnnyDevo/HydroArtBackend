@@ -10,7 +10,10 @@ module.exports = {
                 const success = await userService.validatePassword(user, password);
 
                 if (success) {
-                    return callback(null, user)
+                    return callback(null, {
+                        id: user.id,
+                        username: user.username
+                    });
                 } else {
                     return callback(null, false);
                 }
@@ -27,7 +30,10 @@ module.exports = {
             try {
                 const user = await userService.findUser({ id: id });
                 if (user) {
-                    callback(null, user);
+                    callback(null,{
+                        id: user.id,
+                        username: user.username
+                    });
                 } else {
                     console.warn('could not find a user when deserializing');
                     throw new Error();
