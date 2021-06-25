@@ -3,13 +3,9 @@ const db = require('./models');
 const fs = require('fs');
 
 const checkTable = `
-    SELECT EXISTS
-    (
-        SELECT 1
-        FROM information_schema.tables
-        WHERE table_schema = 'session'
-        AND table_name = 'session'
-    )
+    SELECT table_catalog, table_schema 
+    FROM   information_schema.tables 
+    WHERE  table_name = 'session'
 `
 
 const createCards = `
@@ -97,8 +93,8 @@ const addKeywordToCard = `
 async function execute() {
     try {
         console.log(`checking if "session" table exists`)
-        const exists = await db.query(checkTable, []);
-        if (!exists) {
+        const result = await db.query(checkTable, []);
+        if (!result.rows?.length) {
             console.log(`    table "session" does not exist.`)
             console.log(`    reading "table.sql" from "connect-pg-simple`);
             const createSessions = fs.readFileSync('./node_modules/connect-pg-simple/table.sql').toString();
