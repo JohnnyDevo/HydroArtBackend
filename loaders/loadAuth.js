@@ -29,7 +29,6 @@ module.exports = {
             try {
                 const user = await users.findById(id);
                 if (user) {
-                    delete user.password;
                     callback(null, user);
                 } else {
                     console.warn('could not find a user when deserializing');

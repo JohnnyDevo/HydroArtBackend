@@ -6,7 +6,7 @@ module.exports = {
             const statement = `
                 INSERT INTO users
                 VALUES (DEFAULT, $1, $2, $3, $4, $5)
-                RETURNING *;
+                RETURNING id, username;
             `
             const parameters = [name, hash, credits_name, credits_url, contact_info];
 
@@ -26,11 +26,32 @@ module.exports = {
     findById: async function(id) {
         try {
             const statement = `
-                SELECT username, password, credits_name, credits_url, contact_info
+                SELECT *
                 FROM users
                 WHERE id = $1;
             `
             const parameters = [id];
+
+            const result = await db.query(statement, parameters);
+            if (result.rows?.length) {
+                return result.rows[0];
+            } else {
+                return null;
+            }
+        } catch (error) {
+            console.log('error when querying user');
+            throw error;
+        }
+    },
+
+    findByUsername: async function(username) {
+        try {
+            const statement = `
+                SELECT *
+                FROM users
+                WHERE username = $1;
+            `
+            const parameters = [username];
 
             const result = await db.query(statement, parameters);
             if (result.rows?.length) {
@@ -54,7 +75,7 @@ module.exports = {
                     credits_url = $5,
                     contact_info = $6
                 WHERE id = $1
-                RETURNING *;
+                RETURNING id, username;
             `
             const parameters = [id, name, hash, credits_name, credits_url, contact_info];
 
