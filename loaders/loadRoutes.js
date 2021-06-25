@@ -1,5 +1,7 @@
+const usersRouter = require("../api/users")
+
 module.exports = {
     routesLoader: function(app) {
-        //load any routers here
+        app.use('/users', usersRouter);
     }
 }
