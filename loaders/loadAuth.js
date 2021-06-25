@@ -1,5 +1,6 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const users = require('../models/users.js');
 
 module.exports = {
     authLoader: function(app) {
@@ -26,7 +27,14 @@ module.exports = {
         
         passport.deserializeUser(async function(id, callback) {
             try {
-                throw new Error('user db not yet set up'); //TODO
+                const user = await users.findById(id);
+                if (user) {
+                    delete user.password;
+                    callback(null, user);
+                } else {
+                    console.warn('could not find a user when deserializing');
+                    throw new Error();
+                }
             } catch (error) {
                 callback(error);
             }
