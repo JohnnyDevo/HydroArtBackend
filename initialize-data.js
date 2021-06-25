@@ -32,7 +32,8 @@ const createUsers = `
         username varchar(50),
         password varchar(100),
         credits_name varchar(100),
-        credits_url varchar(100)
+        credits_url varchar(100),
+        contact_info varchar(100)
     )
 `
 
