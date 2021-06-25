@@ -38,7 +38,7 @@ usersRouter.post('/', async (req, res, next) => {
     }
 });
 
-usersRouter.put('/', authenticate, async (req, res, next) => {
+usersRouter.put('/', validateUser, async (req, res, next) => {
     try {
         const user = await userService.findUser({ id: req.user.id });
         if (user) {
@@ -102,7 +102,7 @@ usersRouter.put('/', authenticate, async (req, res, next) => {
     }
 });
 
-usersRouter.delete('/', authenticate, (req, res, next) => {
+usersRouter.delete('/', validateUser, async (req, res, next) => {
     try {
         const user = await userService.findUser({ id: req.user.id });
 
