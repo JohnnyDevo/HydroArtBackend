@@ -1,4 +1,5 @@
 const users = require("../../models/users");
+const saltAndHash = require("../saltAndHash");
 
 module.exports = {
     findUser: async function(user) {
@@ -17,8 +18,7 @@ module.exports = {
             console.warn('needs both a username and a password');
             throw new Error();
         }
-        let hash;
-        //todo: salt and hash password
+        const hash = await saltAndHash.makeHash(info.password, await saltAndHash.makeSalt());
         return await users.create(
             info.username, 
             hash, 
@@ -33,7 +33,8 @@ module.exports = {
             console.warn('needs both a username and a password');
             throw new Error();
         }
-        //todo: salt, hash, and compare password
+        const hash = (await users.findById(user.id)).password;
+        return await saltAndHash.compare(password, hash);
     },
 
     updateUser: async function(id, info) {
@@ -41,8 +42,7 @@ module.exports = {
             console.warn('needs both id and payload');
             throw new Error();
         }
-        let hash;
-        //todo: salt and hash password
+        const hash = await saltAndHash.makeHash(info.password, await saltAndHash.makeSalt());
         return await users.updateById(
             id,
             info.username, 

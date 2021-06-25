@@ -1,15 +1,13 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const users = require('../models/users.js');
+const userService = require('../services/users');
 
 module.exports = {
     authLoader: function(app) {
-        passport.use(new LocalStrategy(async (username, password, callback) => {
+        passport.use(new LocalStrategy(async (name, password, callback) => {
             try {
-                let success = false;
-                let user = {};
-
-                //TODO: retrieve username, salt password, and compare.
+                const user = await userService.findUser({ username: name })
+                const success = await userService.validatePassword(user, password);
 
                 if (success) {
                     return callback(null, user)
@@ -27,7 +25,7 @@ module.exports = {
         
         passport.deserializeUser(async function(id, callback) {
             try {
-                const user = await users.findById(id);
+                const user = await userService.findUser({ id: id });
                 if (user) {
                     callback(null, user);
                 } else {
