@@ -8,6 +8,17 @@ usersRouter.get('/', validateUser, async (req, res, next) => {
     res.status(200).send(req.user);
 });
 
+usersRouter.get('/profile', validateUser, async (req, res, next) => {
+    const user = await userService.findUser({ id: req.user.id });
+    if (user) {
+        delete user.password;
+        res.status(200).send(user);
+    } else {
+        console.warn('updated user was not returned by db');
+        next(new Error());
+    }
+});
+
 usersRouter.post('/', async (req, res, next) => {
     if (!req.body.username || !req.body.password) {
         return res.status(400).send('Needs both a username and a password');
