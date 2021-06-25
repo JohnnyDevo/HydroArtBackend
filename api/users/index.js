@@ -19,6 +19,16 @@ usersRouter.get('/profile', validateUser, async (req, res, next) => {
     }
 });
 
+usersRouter.post('/logout', validateUser, async (req, res, next) => {
+    try {
+        await req.session.destroy();
+        res.status(204).send();
+    } catch (error) {
+        console.warn('failed to log out');
+        next(error);
+    }
+});
+
 usersRouter.post('/', async (req, res, next) => {
     if (!req.body.username || !req.body.password) {
         return res.status(400).send('Needs both a username and a password');
