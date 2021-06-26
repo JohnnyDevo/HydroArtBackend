@@ -18,7 +18,8 @@ const createCards = `
         upgraded_description TEXT NOT NULL,
         type varchar(20) NOT NULL,
         subtype varchar(20),
-        swaps_to varchar(100)
+        swaps_to varchar(100),
+        search_vector TSVECTOR
     );
 `
 
@@ -72,7 +73,7 @@ const addKeyword = `
 
 const addCard = `
     INSERT INTO cards
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, to_tsvector($10))
     ON CONFLICT (id) DO UPDATE SET
     name = excluded.name,
     cost = excluded.cost,
@@ -137,7 +138,16 @@ async function execute() {
 
         for (const card in cardData) {
             console.log(`    adding ${card} to table`);
-            await db.query(addCard, [
+            
+            const search_array = [
+                cardData[card]["NAME"],
+                cardData[card]["DESCRIPTION"],
+                cardData[card]["UPGRADED_DESCRIPTION"],
+                cardData[card]["TYPE"],
+                cardData[card]["SUBTYPE"]
+            ]
+            
+            const tableData = [
                 card, //cardID
                 cardData[card]["NAME"],
                 cardData[card]["COST"],
@@ -146,8 +156,11 @@ async function execute() {
                 cardData[card]["UPGRADED_DESCRIPTION"],
                 cardData[card]["TYPE"],
                 cardData[card]["SUBTYPE"],
-                cardData[card]["SWAPS_TO"]
-            ]);
+                cardData[card]["SWAPS_TO"],
+                search_array
+            ]
+
+            await db.query(addCard, tableData);
             await cardData[card]["KEYWORDS"].forEach(async keyword => {
                 await db.query(addKeywordToCard, [card, keyword]);
             });
