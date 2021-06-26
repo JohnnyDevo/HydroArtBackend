@@ -5,14 +5,14 @@ const validateUser = require('../validateUser');
 const usersRouter = router(); //mounted to '/users'
 
 usersRouter.get('/', validateUser, async (req, res, next) => {
-    res.status(200).send(req.user);
+    res.status(200).json(req.user);
 });
 
 usersRouter.get('/profile', validateUser, async (req, res, next) => {
     const user = await userService.findUser({ id: req.user.id });
     if (user) {
         delete user.password;
-        res.status(200).send(user);
+        res.status(200).json(user);
     } else {
         console.warn('updated user was not returned by db');
         next(new Error());
@@ -47,7 +47,7 @@ usersRouter.post('/', async (req, res, next) => {
             }
             const newUser = await userService.createUser(info);
             if (newUser) {
-                res.status(201).send(newUser);
+                res.status(201).json(newUser);
             } else {
                 console.warn('new user was not returned by service');
                 next(new Error());
@@ -108,7 +108,7 @@ usersRouter.put('/', validateUser, async (req, res, next) => {
 
             if (updatedUser) {
                 req.user.username = updatedUser.username;
-                res.status(201).send(updatedUser);
+                res.status(201).json(updatedUser);
             } else {
                 console.warn('updated user was not returned by db');
                 next(new Error());

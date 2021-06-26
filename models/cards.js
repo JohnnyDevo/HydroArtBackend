@@ -8,8 +8,8 @@ module.exports = {
             const statement = `
                 SELECT
                     id, name,
-                    cost, upgraded_cost
-                    description, upgraded_description
+                    cost, upgraded_cost,
+                    description, upgraded_description,
                     type, subtype
                 FROM cards
                 WHERE search_vector @@ to_tsquery($1);
@@ -30,8 +30,8 @@ module.exports = {
             const statement = `
                 SELECT
                     id, name,
-                    cost, upgraded_cost
-                    description, upgraded_description
+                    cost, upgraded_cost,
+                    description, upgraded_description,
                     type, subtype
                 FROM cards;
             `
@@ -39,7 +39,8 @@ module.exports = {
             return result.rows;
 
         } catch (error) {
-            
+            console.warn('error occured during card retrieval');
+            throw(error);
         }
     }
 }
