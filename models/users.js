@@ -1,6 +1,7 @@
 const db = require('./');
 
 module.exports = {
+    
     create: async function(name, hash, credits_name, credits_url, contact_info) {
         try {
             const statement = `
