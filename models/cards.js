@@ -12,7 +12,7 @@ module.exports = {
                     description, upgraded_description,
                     type, subtype
                 FROM cards
-                WHERE search_vector @@ to_tsquery($1);
+                WHERE search_vector @@ plainto_tsquery($1);
             `
             const parameters = [search_string];
             const result = await db.query(statement, parameters);
