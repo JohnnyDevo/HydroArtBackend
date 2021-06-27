@@ -13,9 +13,10 @@ const createCards = `
         id varchar(100) PRIMARY KEY,
         name varchar(50) NOT NULL,
         cost integer NOT NULL,
-        upgraded_cost integer,
+        upgraded_cost TEXT,
         description TEXT NOT NULL,
         upgraded_description TEXT NOT NULL,
+        rarity varchar(20) NOT NULL,
         type varchar(20) NOT NULL,
         subtype varchar(20),
         swaps_to varchar(100),
@@ -73,13 +74,14 @@ const addKeyword = `
 
 const addCard = `
     INSERT INTO cards
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, to_tsvector($10))
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, to_tsvector($11))
     ON CONFLICT (id) DO UPDATE SET
     name = excluded.name,
     cost = excluded.cost,
     upgraded_cost = excluded.upgraded_cost,
     description = excluded.description,
     upgraded_description = excluded.upgraded_description,
+    rarity = excluded.rarity,
     type = excluded.type,
     subtype = excluded.subtype,
     swaps_to = excluded.swaps_to;
@@ -143,6 +145,7 @@ async function execute() {
                 cardData[card]["NAME"],
                 cardData[card]["DESCRIPTION"],
                 cardData[card]["UPGRADED_DESCRIPTION"],
+                cardData[card]["RARITY"],
                 cardData[card]["TYPE"],
                 cardData[card]["SUBTYPE"]
             ]
@@ -154,6 +157,7 @@ async function execute() {
                 cardData[card]["UPGRADED_COST"],
                 cardData[card]["DESCRIPTION"],
                 cardData[card]["UPGRADED_DESCRIPTION"],
+                cardData[card]["RARITY"],
                 cardData[card]["TYPE"],
                 cardData[card]["SUBTYPE"],
                 cardData[card]["SWAPS_TO"],

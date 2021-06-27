@@ -2,9 +2,10 @@
   "hydrologistmod:Purify": {
     "NAME": "Purify",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Deal 12 damage. <br> Play all of your <br> <span class=\"keyword\">Corporeal</span> cards from <br> left to right targeting <br> this enemy. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">16</span> damage. <br> Play all of your <br> <span class=\"keyword\">Corporeal</span> cards from <br> left to right targeting <br> this enemy. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Deal 12 damage. <br> Play all of your <br> <span class=\"keyword\">Corporeal</span> cards from <br> left to right targeting <br> this enemy. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">16</span> damage. <br> Play all of your <br> <span class=\"keyword\">Corporeal</span> cards from <br> left to right targeting <br> this enemy. <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -15,9 +16,10 @@
   "hydrologistmod:UnstableDefend": {
     "NAME": "Unstable Defend",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 5 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">8</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 5 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">8</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "BASIC",
     "TYPE": "SKILL",
     "KEYWORDS": [
       "block",
@@ -28,9 +30,10 @@
   "hydrologistmod:HeatBlast": {
     "NAME": "Heat Blast",
     "COST": 3,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Deal 5 damage. <br> Permanently gain <br> damage equal to the <br> enemy's <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal 5 damage. <br> Permanently gain <br> damage equal to the <br> enemy's <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">2</span>",
+    "DESCRIPTION": "Deal 5 damage. <br> Permanently gain <br> damage equal to the <br> enemy's <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Deal 5 damage. <br> Permanently gain <br> damage equal to the <br> enemy's <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -41,9 +44,10 @@
   "hydrologistmod:Debilitate": {
     "NAME": "Debilitate",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Deal 12 damage to ALL <br> enemies. <br> Apply 1 <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> to <br> ALL enemies. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">15</span> damage to ALL <br> enemies. <br> Apply <span class=\"upgrade\">2</span> <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> to <br> ALL enemies. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Deal 12 damage to ALL <br> enemies. <br> Apply 1 <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> to <br> ALL enemies. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">15</span> damage to ALL <br> enemies. <br> Apply <span class=\"upgrade\">2</span> <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> to <br> ALL enemies. <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -54,9 +58,10 @@
   "hydrologistmod:SwelteringStrike": {
     "NAME": "Sweltering Strike",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 6 damage. <br> If enemy is <span class=\"keyword\">Hot,</span> deal 6 <br> damage. <br> If enemy is <span class=\"keyword\">Cool,</span> deal <br> 6 damage. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> If enemy is <span class=\"keyword\">Hot,</span> deal <span class=\"upgrade\">9</span> <br> damage. <br> If enemy is <span class=\"keyword\">Cool,</span> deal <br> <span class=\"upgrade\">9</span> damage. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 6 damage. <br> If enemy is <span class=\"keyword\">Hot,</span> deal 6 <br> damage. <br> If enemy is <span class=\"keyword\">Cool,</span> deal <br> 6 damage.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> If enemy is <span class=\"keyword\">Hot,</span> deal <span class=\"upgrade\">9</span> <br> damage. <br> If enemy is <span class=\"keyword\">Cool,</span> deal <br> <span class=\"upgrade\">9</span> damage.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -67,9 +72,10 @@
   "hydrologistmod:BracedForm": {
     "NAME": "Braced Form",
     "COST": 3,
-    "UPGRADED_COST": 3,
-    "DESCRIPTION": "At the start of your <br> turn, add 2 copies of <br> <span class=\"keyword\">Razor</span> <span class=\"keyword\">Ice</span> into your <br> hand. <br> ",
-    "UPGRADED_DESCRIPTION": "At the start of your <br> turn, add <span class=\"upgrade\">3</span> copies of <br> <span class=\"keyword\">Razor</span> <span class=\"keyword\">Ice</span> into your <br> hand. <br> ",
+    "UPGRADED_COST": "3",
+    "DESCRIPTION": "At the start of your <br> turn, add 2 copies of <br> <span class=\"keyword\">Razor</span> <span class=\"keyword\">Ice</span> into your <br> hand.",
+    "UPGRADED_DESCRIPTION": "At the start of your <br> turn, add <span class=\"upgrade\">3</span> copies of <br> <span class=\"keyword\">Razor</span> <span class=\"keyword\">Ice</span> into your <br> hand.",
+    "RARITY": "RARE",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": []
@@ -77,9 +83,10 @@
   "hydrologistmod:YawningAbyss": {
     "NAME": "Yawning Abyss",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Deal 5 damage. <br> Deal 5 damage an <br> additional time for <br> each stack of <span class=\"keyword\">Cold</span> on <br> the enemy. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">7</span> damage. <br> Deal <span class=\"upgrade\">7</span> damage an <br> additional time for <br> each stack of <span class=\"keyword\">Cold</span> on <br> the enemy. <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Deal 5 damage. <br> Deal 5 damage an <br> additional time for <br> each stack of <span class=\"keyword\">Cold</span> on <br> the enemy.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">7</span> damage. <br> Deal <span class=\"upgrade\">7</span> damage an <br> additional time for <br> each stack of <span class=\"keyword\">Cold</span> on <br> the enemy.",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -89,9 +96,10 @@
   "hydrologistmod:LayeredShell": {
     "NAME": "Layered Shell",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 7 <span class=\"keyword\">Block.</span> <br> Increase the damage <br> dealt by the <span class=\"keyword\">Paired</span> <br> card by 4 this combat. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">9</span> <span class=\"keyword\">Block.</span> <br> Increase the damage <br> dealt by the <span class=\"keyword\">Paired</span> <br> card by <span class=\"upgrade\">7</span> this combat. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 7 <span class=\"keyword\">Block.</span> <br> Increase the damage <br> dealt by the <span class=\"keyword\">Paired</span> <br> card by 4 this combat. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">9</span> <span class=\"keyword\">Block.</span> <br> Increase the damage <br> dealt by the <span class=\"keyword\">Paired</span> <br> card by <span class=\"upgrade\">7</span> this combat. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -103,9 +111,10 @@
   "hydrologistmod:SearingSynthesis": {
     "NAME": "Searing Synthesis",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 9 damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Steam</span> card. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">12</span> damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Steam</span> card. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 9 damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Steam</span> card.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">12</span> damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Steam</span> card.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -115,9 +124,10 @@
   "hydrologistmod:FrozenCapsule": {
     "NAME": "Frozen Capsule",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 6 damage. <br> <span class=\"keyword\">Transmute</span> this card. <br> <span class=\"keyword\">Mutable:</span> When <br> <span class=\"keyword\">Transmuted,</span> this gains <br> 2 <span class=\"keyword\">Purity.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal 6 damage. <br> <span class=\"keyword\">Transmute</span> this card. <br> <span class=\"keyword\">Mutable:</span> When <br> <span class=\"keyword\">Transmuted,</span> this gains <br> <span class=\"upgrade\">3</span> <span class=\"keyword\">Purity.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 6 damage. <br> <span class=\"keyword\">Transmute</span> this card. <br> <span class=\"keyword\">Mutable:</span> When <br> <span class=\"keyword\">Transmuted,</span> this gains <br> 2 <span class=\"keyword\">Purity.</span>",
+    "UPGRADED_DESCRIPTION": "Deal 6 damage. <br> <span class=\"keyword\">Transmute</span> this card. <br> <span class=\"keyword\">Mutable:</span> When <br> <span class=\"keyword\">Transmuted,</span> this gains <br> <span class=\"upgrade\">3</span> <span class=\"keyword\">Purity.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -129,9 +139,10 @@
   "hydrologistmod:LaminarFlow": {
     "NAME": "Laminar Flow",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "At the end of your <br> turn, gain 3 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "At the end of your <br> turn, gain <span class=\"upgrade\">4</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "At the end of your <br> turn, gain 3 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "At the end of your <br> turn, gain <span class=\"upgrade\">4</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "RARE",
     "TYPE": "POWER",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -142,9 +153,10 @@
   "hydrologistmod:Defrost": {
     "NAME": "Defrost",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "At the end of your <br> turn, <span class=\"keyword\">Retain</span> all <br> <span class=\"keyword\">Corporeal</span> cards in <br> your hand. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> At the end of your <br> turn, <span class=\"keyword\">Retain</span> all <br> <span class=\"keyword\">Corporeal</span> cards in <br> your hand. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "At the end of your <br> turn, <span class=\"keyword\">Retain</span> all <br> <span class=\"keyword\">Corporeal</span> cards in <br> your hand.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> At the end of your <br> turn, <span class=\"keyword\">Retain</span> all <br> <span class=\"keyword\">Corporeal</span> cards in <br> your hand.",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -156,9 +168,10 @@
   "hydrologistmod:HighTide": {
     "NAME": "High Tide",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -170,9 +183,10 @@
   "hydrologistmod:CrystalLattice": {
     "NAME": "Crystal Lattice",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Deal 5 damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. Add 2 <br> additional copies of the <br> new card to your hand. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">8</span> damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. Add <span class=\"upgrade\">3</span> <br> additional copies of the <br> new card to your hand. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Deal 5 damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. Add 2 <br> additional copies of the <br> new card to your hand. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">8</span> damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. Add <span class=\"upgrade\">3</span> <br> additional copies of the <br> new card to your hand. <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -183,9 +197,10 @@
   "hydrologistmod:PurifyingSteam": {
     "NAME": "Purifying Steam",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Deal 4 damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">7</span> damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Deal 4 damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">7</span> damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -196,9 +211,10 @@
   "hydrologistmod:PressureCycle": {
     "NAME": "Pressure Cycle",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain <span class=\"keyword\">Block</span> equal to <br> the number of cards in <br> your discard pile, then <br> shuffle your discard <br> pile into your draw <br> pile. <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"keyword\">Block</span> equal to <br> the number of cards in <br> your discard pile. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain <span class=\"keyword\">Block</span> equal to <br> the number of cards in <br> your discard pile, then <br> shuffle your discard <br> pile into your draw <br> pile.",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"keyword\">Block</span> equal to <br> the number of cards in <br> your discard pile.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -208,9 +224,10 @@
   "hydrologistmod:SteamLash": {
     "NAME": "Steam Lash",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 8 damage. <br> Apply 4 <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable.</span> <br> When <span class=\"keyword\">Swapped,</span> gain <br> [E]. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">12</span> damage. <br> Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable.</span> <br> When <span class=\"keyword\">Swapped,</span> gain <br> [E]. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 8 damage. <br> Apply 4 <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable.</span> <br> When <span class=\"keyword\">Swapped,</span> gain <br> [E].",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">12</span> damage. <br> Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable.</span> <br> When <span class=\"keyword\">Swapped,</span> gain <br> [E].",
+    "RARITY": "BASIC",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -222,9 +239,10 @@
   "hydrologistmod:PureWater": {
     "NAME": "Pure Water",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -235,9 +253,10 @@
   "hydrologistmod:FrigidLash": {
     "NAME": "Frigid Lash",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 8 damage. <br> Increase the <span class=\"keyword\">Block</span> <br> gained by the <span class=\"keyword\">Paired</span> <br> card by 3 this combat. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">11</span> damage. <br> Increase the <span class=\"keyword\">Block</span> <br> gained by the <span class=\"keyword\">Paired</span> <br> card by <span class=\"upgrade\">5</span> this combat. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 8 damage. <br> Increase the <span class=\"keyword\">Block</span> <br> gained by the <span class=\"keyword\">Paired</span> <br> card by 3 this combat. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">11</span> damage. <br> Increase the <span class=\"keyword\">Block</span> <br> gained by the <span class=\"keyword\">Paired</span> <br> card by <span class=\"upgrade\">5</span> this combat. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -248,9 +267,10 @@
   "hydrologistmod:WaterWheel": {
     "NAME": "Water Wheel",
     "COST": -1,
-    "UPGRADED_COST": -1,
-    "DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> It gains 3 times X <br> <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> It gains <span class=\"upgrade\">5</span> times X <br> <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "-1",
+    "DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> It gains 3 times X <br> <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> It gains <span class=\"upgrade\">5</span> times X <br> <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -262,9 +282,10 @@
   "hydrologistmod:IcyFloe": {
     "NAME": "Icy Floe",
     "COST": 2,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> draw a card. <br> Increase your <br> maximum hand size <br> by !M!. <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> draw a card. <br> Increase your <br> maximum hand size <br> by !M!. <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">1</span>",
+    "DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> draw a card. <br> Increase your <br> maximum hand size <br> by !M!.",
+    "UPGRADED_DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> draw a card. <br> Increase your <br> maximum hand size <br> by !M!.",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -274,9 +295,10 @@
   "hydrologistmod:PressureBuildup": {
     "NAME": "Pressure Buildup",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Every 5th <span class=\"keyword\">Corporeal</span> <br> card you play, deal 12 <br> damage to ALL <br> enemies. <br> ",
-    "UPGRADED_DESCRIPTION": "Every 5th <span class=\"keyword\">Corporeal</span> <br> card you play, deal <span class=\"upgrade\">15</span> <br> damage to ALL <br> enemies. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Every 5th <span class=\"keyword\">Corporeal</span> <br> card you play, deal 12 <br> damage to ALL <br> enemies.",
+    "UPGRADED_DESCRIPTION": "Every 5th <span class=\"keyword\">Corporeal</span> <br> card you play, deal <span class=\"upgrade\">15</span> <br> damage to ALL <br> enemies.",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -286,9 +308,10 @@
   "hydrologistmod:Cascade": {
     "NAME": "Cascade",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Gain 4 <span class=\"keyword\">Block</span> for each <br> card discarded this <br> way. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Gain <span class=\"upgrade\">5</span> <span class=\"keyword\">Block</span> for each <br> card discarded this <br> way. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Gain 4 <span class=\"keyword\">Block</span> for each <br> card discarded this <br> way.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Gain <span class=\"upgrade\">5</span> <span class=\"keyword\">Block</span> for each <br> card discarded this <br> way.",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -299,9 +322,10 @@
   "hydrologistmod:PureSteam": {
     "NAME": "Pure Steam",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Deal 3 <br> damage. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Deal <span class=\"upgrade\">6</span> <br> damage. <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Deal 3 <br> damage.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Deal <span class=\"upgrade\">6</span> <br> damage.",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -311,9 +335,10 @@
   "hydrologistmod:Cryogenics": {
     "NAME": "Cryogenics",
     "COST": 1,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Choose any number of <br> cards in your hand to <br> <span class=\"keyword\">Transmute.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Choose any number of <br> cards in your hand to <br> <span class=\"keyword\">Transmute.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">0</span>",
+    "DESCRIPTION": "Choose any number of <br> cards in your hand to <br> <span class=\"keyword\">Transmute.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Choose any number of <br> cards in your hand to <br> <span class=\"keyword\">Transmute.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -324,9 +349,10 @@
   "hydrologistmod:SoothingWater": {
     "NAME": "Soothing Water",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Heal 6 HP. <br> <span class=\"keyword\">Fleeting.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> permanently increase this <br> card's healing by 4 and <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Heal 6 HP. <br> <span class=\"keyword\">Fleeting.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> permanently increase this <br> card's healing by 4 and <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Heal 6 HP. <br> <span class=\"keyword\">Fleeting.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> permanently increase this <br> card's healing by 4 and <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Heal 6 HP. <br> <span class=\"keyword\">Fleeting.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> permanently increase this <br> card's healing by 4 and <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -338,9 +364,10 @@
   "hydrologistmod:UnstableStrike": {
     "NAME": "Unstable Strike",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 6 damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 6 damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "BASIC",
     "TYPE": "ATTACK",
     "KEYWORDS": [
       "hydrologistmod:swappable"
@@ -349,9 +376,10 @@
   "hydrologistmod:StormFront": {
     "NAME": "Storm Front",
     "COST": 3,
-    "UPGRADED_COST": 3,
-    "DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Deal 20 damage. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Deal <span class=\"upgrade\">25</span> damage. <br> ",
+    "UPGRADED_COST": "3",
+    "DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Deal 20 damage.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Deal <span class=\"upgrade\">25</span> damage.",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -361,9 +389,10 @@
   "hydrologistmod:ViscousShell": {
     "NAME": "Viscous Shell",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain 5 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> this card. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain <span class=\"upgrade\">8</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> this card. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain 5 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> this card.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain <span class=\"upgrade\">8</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> this card.",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -375,9 +404,10 @@
   "hydrologistmod:JetPropulsion": {
     "NAME": "Jet Propulsion",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Apply 3 <span class=\"keyword\">Heat.</span> If the <br> enemy does NOT <br> intend to attack, draw <br> 2 cards. <br> ",
-    "UPGRADED_DESCRIPTION": "Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Heat.</span> If the <br> enemy does NOT <br> intend to attack, draw <br> 2 cards. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Apply 3 <span class=\"keyword\">Heat.</span> If the <br> enemy does NOT <br> intend to attack, draw <br> 2 cards.",
+    "UPGRADED_DESCRIPTION": "Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Heat.</span> If the <br> enemy does NOT <br> intend to attack, draw <br> 2 cards.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -387,9 +417,10 @@
   "hydrologistmod:TidalWave": {
     "NAME": "Tidal Wave",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -400,9 +431,10 @@
   "hydrologistmod:Reservoir": {
     "NAME": "Reservoir",
     "COST": -2,
-    "UPGRADED_COST": -2,
-    "DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> discard this card. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> discard this card. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "-2",
+    "DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> discard this card. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> When <span class=\"keyword\">Swapped,</span> <br> discard this card. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -414,9 +446,10 @@
   "hydrologistmod:StaticSteam": {
     "NAME": "Static Steam",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Deal 3 damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">6</span> damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Deal 3 damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">6</span> damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -426,9 +459,10 @@
   "hydrologistmod:SoggySynthesis": {
     "NAME": "Soggy Synthesis",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 5 <span class=\"keyword\">Block.</span> <br> Deal 5 damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Water</span> card. <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">7</span> <span class=\"keyword\">Block.</span> <br> Deal <span class=\"upgrade\">7</span> damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Water</span> card. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 5 <span class=\"keyword\">Block.</span> <br> Deal 5 damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Water</span> card.",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">7</span> <span class=\"keyword\">Block.</span> <br> Deal <span class=\"upgrade\">7</span> damage. <br> <span class=\"keyword\">Transmute</span> a card into <br> a <span class=\"keyword\">Water</span> card.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -439,9 +473,10 @@
   "hydrologistmod:StaticIce": {
     "NAME": "Static Ice",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Transmute</span> a card. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -452,9 +487,10 @@
   "hydrologistmod:ReleaseValve": {
     "NAME": "Release Valve",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> the enemy takes 4 <br> damage for each card <br> discarded. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> the enemy takes <span class=\"upgrade\">6</span> <br> damage for each card <br> discarded. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> the enemy takes 4 <br> damage for each card <br> discarded. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you <span class=\"keyword\">Flow,</span> <br> the enemy takes <span class=\"upgrade\">6</span> <br> damage for each card <br> discarded. <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -465,9 +501,10 @@
   "hydrologistmod:StaticWater": {
     "NAME": "Static Water",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -477,9 +514,10 @@
   "hydrologistmod:SteamEngine": {
     "NAME": "Steam Engine",
     "COST": 3,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "The first <span class=\"keyword\">Corporeal</span> <br> card you play each <br> turn is played twice. <br> ",
-    "UPGRADED_DESCRIPTION": "The first <span class=\"keyword\">Corporeal</span> <br> card you play each <br> turn is played twice. <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">2</span>",
+    "DESCRIPTION": "The first <span class=\"keyword\">Corporeal</span> <br> card you play each <br> turn is played twice.",
+    "UPGRADED_DESCRIPTION": "The first <span class=\"keyword\">Corporeal</span> <br> card you play each <br> turn is played twice.",
+    "RARITY": "RARE",
     "TYPE": "POWER",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -489,9 +527,10 @@
   "hydrologistmod:SurfaceTension": {
     "NAME": "Surface Tension",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Gain 10 <span class=\"keyword\">Block.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Gain <span class=\"upgrade\">14</span> <span class=\"keyword\">Block.</span> <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Gain 10 <span class=\"keyword\">Block.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Ebbing.</span> <br> Gain <span class=\"upgrade\">14</span> <span class=\"keyword\">Block.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -502,9 +541,10 @@
   "hydrologistmod:CrystalSpear": {
     "NAME": "Crystal Spear",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 8 damage. <br> Deals extra damage <br> equal to 2 times the <br> total <span class=\"keyword\">Purity</span> of ALL <br> your cards. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal 8 damage. <br> Deals extra damage <br> equal to <span class=\"upgrade\">3</span> times the <br> total <span class=\"keyword\">Purity</span> of ALL <br> your cards. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 8 damage. <br> Deals extra damage <br> equal to 2 times the <br> total <span class=\"keyword\">Purity</span> of ALL <br> your cards.",
+    "UPGRADED_DESCRIPTION": "Deal 8 damage. <br> Deals extra damage <br> equal to <span class=\"upgrade\">3</span> times the <br> total <span class=\"keyword\">Purity</span> of ALL <br> your cards.",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -514,9 +554,10 @@
   "hydrologistmod:WallOfIce": {
     "NAME": "Wall of Ice",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 11 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">15</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 11 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">15</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -528,9 +569,10 @@
   "hydrologistmod:HighPressure": {
     "NAME": "High Pressure",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Heat,</span> apply 1 <br> additional <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Heat,</span> apply <span class=\"upgrade\">2</span> <br> additional <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Heat,</span> apply 1 <br> additional <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Heat,</span> apply <span class=\"upgrade\">2</span> <br> additional <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Swappable</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -541,9 +583,10 @@
   "hydrologistmod:Freeze": {
     "NAME": "Freeze",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 8 damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">11</span> damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 8 damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">11</span> damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -553,9 +596,10 @@
   "hydrologistmod:StormOfSleet": {
     "NAME": "Storm of Sleet",
     "COST": 2,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Discard any number of <br> cards. Add a <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> into your hand for <br> each card discarded. <br> ",
-    "UPGRADED_DESCRIPTION": "Discard any number of <br> cards. Add a <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> into your hand for <br> each card discarded. <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">1</span>",
+    "DESCRIPTION": "Discard any number of <br> cards. Add a <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> into your hand for <br> each card discarded.",
+    "UPGRADED_DESCRIPTION": "Discard any number of <br> cards. Add a <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> into your hand for <br> each card discarded.",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": []
@@ -563,9 +607,10 @@
   "hydrologistmod:GhostlyMist": {
     "NAME": "Ghostly Mist",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> If you played a <br> <span class=\"keyword\">Corporeal</span> card this <br> turn, deal 7 damage <br> again. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> If you played a <br> <span class=\"keyword\">Corporeal</span> card this <br> turn, deal <span class=\"upgrade\">10</span> damage <br> again. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> If you played a <br> <span class=\"keyword\">Corporeal</span> card this <br> turn, deal 7 damage <br> again.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> If you played a <br> <span class=\"keyword\">Corporeal</span> card this <br> turn, deal <span class=\"upgrade\">10</span> damage <br> again.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -575,9 +620,10 @@
   "hydrologistmod:IceSpike": {
     "NAME": "Ice Spike",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 10 damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">14</span> damage. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 10 damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">14</span> damage. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -587,9 +633,10 @@
   "hydrologistmod:Ripcurrent": {
     "NAME": "Ripcurrent",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Double the enemy's <br> <span class=\"keyword\">Cold</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Triple the enemy's <br> <span class=\"keyword\">Cold</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Double the enemy's <br> <span class=\"keyword\">Cold</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Triple the enemy's <br> <span class=\"keyword\">Cold</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -602,9 +649,10 @@
   "hydrologistmod:Eruption": {
     "NAME": "Eruption",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 20 damage. <br> Gain <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> . <br> <span class=\"keyword\">Swaps</span> when played. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">25</span> damage. <br> Gain <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> . <br> <span class=\"keyword\">Swaps</span> when played. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 20 damage. <br> Gain <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> . <br> <span class=\"keyword\">Swaps</span> when played. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">25</span> damage. <br> Gain <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> . <br> <span class=\"keyword\">Swaps</span> when played. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -615,9 +663,10 @@
   "hydrologistmod:GlacialSynthesis": {
     "NAME": "Glacial Synthesis",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 7 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> a card into <br> an <span class=\"keyword\">Ice</span> card. <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">10</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> a card into <br> an <span class=\"keyword\">Ice</span> card. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 7 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> a card into <br> an <span class=\"keyword\">Ice</span> card.",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">10</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Transmute</span> a card into <br> an <span class=\"keyword\">Ice</span> card.",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -628,9 +677,10 @@
   "hydrologistmod:RiverOfTime": {
     "NAME": "River Of Time",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "This turn, your next <br> <span class=\"keyword\">Swappable</span> card is also <br> played <span class=\"keyword\">Swapped.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "This turn, your next 2 <br> <span class=\"keyword\">Swappable</span> cards are <br> also played <span class=\"keyword\">Swapped.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "This turn, your next <br> <span class=\"keyword\">Swappable</span> card is also <br> played <span class=\"keyword\">Swapped.</span>",
+    "UPGRADED_DESCRIPTION": "This turn, your next 2 <br> <span class=\"keyword\">Swappable</span> cards are <br> also played <span class=\"keyword\">Swapped.</span>",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -640,9 +690,10 @@
   "hydrologistmod:Defend_Hydrologist": {
     "NAME": "Defend",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 5 <span class=\"keyword\">Block.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">8</span> <span class=\"keyword\">Block.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 5 <span class=\"keyword\">Block.</span>",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">8</span> <span class=\"keyword\">Block.</span>",
+    "RARITY": "BASIC",
     "TYPE": "SKILL",
     "KEYWORDS": [
       "block"
@@ -651,9 +702,10 @@
   "hydrologistmod:Pneumatics": {
     "NAME": "Pneumatics",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> At the start of the next <br> turn, <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> At the start of the next <br> <span class=\"upgrade\">2</span> turns, <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> At the start of the next <br> turn, <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> At the start of the next <br> <span class=\"upgrade\">2</span> turns, <span class=\"keyword\">Flow.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -664,9 +716,10 @@
   "hydrologistmod:MeltingIceberg": {
     "NAME": "Melting Iceberg",
     "COST": 1,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "This gains 5 <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Transmute</span> <br> this card. <br> ",
-    "UPGRADED_DESCRIPTION": "This gains 5 <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Transmute</span> <br> this card. <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">0</span>",
+    "DESCRIPTION": "This gains 5 <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Transmute</span> <br> this card.",
+    "UPGRADED_DESCRIPTION": "This gains 5 <span class=\"keyword\">Purity.</span> <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Transmute</span> <br> this card.",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -678,9 +731,10 @@
   "hydrologistmod:CrystalIce": {
     "NAME": "Crystal Ice",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 3 <span class=\"keyword\">Block.</span> <br> Increase the effect of <br> the <span class=\"keyword\">Paired</span> <span class=\"keyword\">Laminar</span> <br> <span class=\"keyword\">Flow</span> by that much. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">4</span> <span class=\"keyword\">Block.</span> <br> Increase the effect of <br> the <span class=\"keyword\">Paired</span> <span class=\"keyword\">Laminar</span> <br> <span class=\"keyword\">Flow</span> by that much. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 3 <span class=\"keyword\">Block.</span> <br> Increase the effect of <br> the <span class=\"keyword\">Paired</span> <span class=\"keyword\">Laminar</span> <br> <span class=\"keyword\">Flow</span> by that much. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">4</span> <span class=\"keyword\">Block.</span> <br> Increase the effect of <br> the <span class=\"keyword\">Paired</span> <span class=\"keyword\">Laminar</span> <br> <span class=\"keyword\">Flow</span> by that much. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -692,9 +746,10 @@
   "hydrologistmod:Scald": {
     "NAME": "Scald",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 12 damage. <br> Apply 2 <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">16</span> damage. <br> Apply <span class=\"upgrade\">3</span> <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 12 damage. <br> Apply 2 <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">16</span> damage. <br> Apply <span class=\"upgrade\">3</span> <br> <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span>",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -704,9 +759,10 @@
   "hydrologistmod:FrostWhip": {
     "NAME": "Frost Whip",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 6 damage. <br> Apply 1 <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span> <br> Costs <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> to <span class=\"keyword\">Swap.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> Apply <span class=\"upgrade\">2</span> <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span> <br> Costs <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> to <span class=\"keyword\">Swap.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 6 damage. <br> Apply 1 <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span> <br> Costs <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> to <span class=\"keyword\">Swap.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> Apply <span class=\"upgrade\">2</span> <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span> <br> Costs <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> to <span class=\"keyword\">Swap.</span>",
+    "RARITY": "BASIC",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -719,9 +775,10 @@
   "hydrologistmod:FreezeDry": {
     "NAME": "Freeze Dry",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Add 2 copies of <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> to your hand. <br> ",
-    "UPGRADED_DESCRIPTION": "Add <span class=\"upgrade\">3</span> copies of <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> to your hand. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Add 2 copies of <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> to your hand.",
+    "UPGRADED_DESCRIPTION": "Add <span class=\"upgrade\">3</span> copies of <span class=\"keyword\">Razor</span> <br> <span class=\"keyword\">Ice</span> to your hand.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": []
@@ -729,9 +786,10 @@
   "hydrologistmod:PressureBlast": {
     "NAME": "Pressure Blast",
     "COST": -1,
-    "UPGRADED_COST": -1,
-    "DESCRIPTION": "Deal 7 damage X (+ 0 ) <br> times. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage X (+ 0 ) <br> times. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "-1",
+    "DESCRIPTION": "Deal 7 damage X (+ 0 ) <br> times. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage X (+ 0 ) <br> times. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -742,9 +800,10 @@
   "hydrologistmod:SteadyTide": {
     "NAME": "Steady Tide",
     "COST": 1,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Next turn, draw an <br> additional extra card <br> for each card <br> discarded this way. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Next turn, draw an <br> additional extra card <br> for each card <br> discarded this way. <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">0</span>",
+    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Next turn, draw an <br> additional extra card <br> for each card <br> discarded this way.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> Next turn, draw an <br> additional extra card <br> for each card <br> discarded this way.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -754,9 +813,10 @@
   "hydrologistmod:GlacialStrike": {
     "NAME": "Glacial Strike",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Deal 10 damage. <br> If the enemy is <span class=\"keyword\">Hot,</span> <br> gain 8 <span class=\"keyword\">Block.</span> <br> If the enemy is <span class=\"keyword\">Cool,</span> <br> deal an additional 10 <br> damage. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">13</span> damage. <br> If the enemy is <span class=\"keyword\">Hot,</span> <br> gain <span class=\"upgrade\">10</span> <span class=\"keyword\">Block.</span> <br> If the enemy is <span class=\"keyword\">Cool,</span> <br> deal an additional <span class=\"upgrade\">13</span> <br> damage. <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Deal 10 damage. <br> If the enemy is <span class=\"keyword\">Hot,</span> <br> gain 8 <span class=\"keyword\">Block.</span> <br> If the enemy is <span class=\"keyword\">Cool,</span> <br> deal an additional 10 <br> damage.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">13</span> damage. <br> If the enemy is <span class=\"keyword\">Hot,</span> <br> gain <span class=\"upgrade\">10</span> <span class=\"keyword\">Block.</span> <br> If the enemy is <span class=\"keyword\">Cool,</span> <br> deal an additional <span class=\"upgrade\">13</span> <br> damage.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -768,9 +828,10 @@
   "hydrologistmod:Drench": {
     "NAME": "Drench",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> If the enemy is not <br> <span class=\"keyword\">Hot,</span> apply 3 <span class=\"keyword\">Cold.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal 7 damage. <br> Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Cold.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> If the enemy is not <br> <span class=\"keyword\">Hot,</span> apply 3 <span class=\"keyword\">Cold.</span>",
+    "UPGRADED_DESCRIPTION": "Deal 7 damage. <br> Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Cold.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -781,9 +842,10 @@
   "hydrologistmod:StagnantCloak": {
     "NAME": "Stagnant Cloak",
     "COST": 2,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you would <br> lose HP, lose 1 less. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you would <br> lose HP, lose 1 less. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">1</span>",
+    "DESCRIPTION": "Whenever you would <br> lose HP, lose 1 less. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you would <br> lose HP, lose 1 less. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -794,9 +856,10 @@
   "hydrologistmod:HotSprings": {
     "NAME": "Hot Springs",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "At the end of your <br> turn, deal 12 damage to <br> ALL enemies suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "At the end of your <br> turn, deal <span class=\"upgrade\">16</span> damage to <br> ALL enemies suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "At the end of your <br> turn, deal 12 damage to <br> ALL enemies suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span>",
+    "UPGRADED_DESCRIPTION": "At the end of your <br> turn, deal <span class=\"upgrade\">16</span> damage to <br> ALL enemies suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -806,9 +869,10 @@
   "hydrologistmod:Blizzard": {
     "NAME": "Blizzard",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "This card gains <br> \"Mutable: Adaptive !hydrologistmod:A!\". <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
-    "UPGRADED_DESCRIPTION": "This card gains <br> \"Mutable: Adaptive !hydrologistmod:A!\". <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "This card gains <br> \"Mutable: Adaptive !hydrologistmod:A!\". <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "UPGRADED_DESCRIPTION": "This card gains <br> \"Mutable: Adaptive !hydrologistmod:A!\". <br> <span class=\"keyword\">Mutable:</span> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -819,9 +883,10 @@
   "hydrologistmod:Dehydrate": {
     "NAME": "Dehydrate",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> If the enemy is not <br> <span class=\"keyword\">Cool,</span> apply 3 <span class=\"keyword\">Heat.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal 7 damage. <br> Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Heat.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> If the enemy is not <br> <span class=\"keyword\">Cool,</span> apply 3 <span class=\"keyword\">Heat.</span>",
+    "UPGRADED_DESCRIPTION": "Deal 7 damage. <br> Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Heat.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -832,9 +897,10 @@
   "hydrologistmod:Hail": {
     "NAME": "Hail",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Adaptive</span> !hydrologistmod:A!.",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -844,9 +910,10 @@
   "hydrologistmod:ResonantCrystal": {
     "NAME": "Resonant Crystal",
     "COST": 2,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, the <br> new card is <span class=\"keyword\">Upgraded.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, the <br> new card is <span class=\"keyword\">Upgraded.</span> <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">1</span>",
+    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, the <br> new card is <span class=\"keyword\">Upgraded.</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, the <br> new card is <span class=\"keyword\">Upgraded.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -857,9 +924,10 @@
   "hydrologistmod:BranchingCreeks": {
     "NAME": "Branching Creeks",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> choose between 1 <br> additional cards. <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> choose between <span class=\"upgrade\">2</span> <br> additional cards. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> choose between 1 <br> additional cards.",
+    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> choose between <span class=\"upgrade\">2</span> <br> additional cards.",
+    "RARITY": "RARE",
     "TYPE": "POWER",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -869,9 +937,10 @@
   "hydrologistmod:FlowingCurrents": {
     "NAME": "Flowing Currents",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> When <span class=\"keyword\">Swapped,</span> you <br> cannot swap away <br> from this card again <br> this turn. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Draw a card, then <span class=\"keyword\">Flow.</span> <br> When <span class=\"keyword\">Swapped,</span> you <br> cannot swap away from <br> this card again this <br> turn. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Flow.</span> <br> When <span class=\"keyword\">Swapped,</span> you <br> cannot swap away <br> from this card again <br> this turn. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Draw a card, then <span class=\"keyword\">Flow.</span> <br> When <span class=\"keyword\">Swapped,</span> you <br> cannot swap away from <br> this card again this <br> turn. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -883,9 +952,10 @@
   "hydrologistmod:Hydraulics": {
     "NAME": "Hydraulics",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 8 damage. <br> If the enemy intends <br> to attack, <span class=\"keyword\">Flow.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">12</span> damage. <br> If the enemy intends <br> to attack, <span class=\"keyword\">Flow.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 8 damage. <br> If the enemy intends <br> to attack, <span class=\"keyword\">Flow.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">12</span> damage. <br> If the enemy intends <br> to attack, <span class=\"keyword\">Flow.</span>",
+    "RARITY": "BASIC",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -895,9 +965,10 @@
   "hydrologistmod:HeatAndPressure": {
     "NAME": "Heat and Pressure",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Double the enemy's <br> <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Triple the enemy's <br> <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Double the enemy's <br> <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Triple the enemy's <br> <span class=\"keyword\">Heat</span> amount. <br> <span class=\"keyword\">Exhaust.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -909,9 +980,10 @@
   "hydrologistmod:SteamPower": {
     "NAME": "Steam Power",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "If enemy is suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock,</span> <br> draw cards equal to its <br> duration and remove <br> it. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "If enemy is suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock,</span> <br> draw cards equal to its <br> duration and remove <br> it. <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "If enemy is suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock,</span> <br> draw cards equal to its <br> duration and remove <br> it. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "If enemy is suffering <br> from <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock,</span> <br> draw cards equal to its <br> duration and remove <br> it.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -922,9 +994,10 @@
   "hydrologistmod:ScaldingGeyser": {
     "NAME": "Scalding Geyser",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> Deal 24 damage. <br> Apply 4 <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> Deal <span class=\"upgrade\">28</span> damage. <br> Apply <span class=\"upgrade\">6</span> <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> Deal 24 damage. <br> Apply 4 <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Innate.</span> <br> Deal <span class=\"upgrade\">28</span> damage. <br> Apply <span class=\"upgrade\">6</span> <span class=\"keyword\">Heat.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -936,9 +1009,10 @@
   "hydrologistmod:Endothermancy": {
     "NAME": "Endothermancy",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply 2 <span class=\"keyword\">Cold</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply <span class=\"upgrade\">3</span> <span class=\"keyword\">Cold</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply 2 <span class=\"keyword\">Cold</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply <span class=\"upgrade\">3</span> <span class=\"keyword\">Cold</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -951,9 +1025,10 @@
   "hydrologistmod:PureIce": {
     "NAME": "Pure Ice",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Gain 2 <span class=\"keyword\">Block.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Gain <span class=\"upgrade\">4</span> <span class=\"keyword\">Block.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Gain 2 <span class=\"keyword\">Block.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Draw a card. <br> <span class=\"keyword\">Mutable:</span> Gain <span class=\"upgrade\">4</span> <span class=\"keyword\">Block.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -964,18 +1039,20 @@
   "hydrologistmod:Strike_Hydrologist": {
     "NAME": "Strike",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 6 damage. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 6 damage.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">9</span> damage.",
+    "RARITY": "BASIC",
     "TYPE": "ATTACK",
     "KEYWORDS": []
   },
   "hydrologistmod:Upstream": {
     "NAME": "Upstream",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Apply 3 <span class=\"keyword\">Cold.</span> <br> If the enemy intends <br> to attack, gain 5 <br> <span class=\"keyword\">Block.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Cold.</span> <br> If the enemy intends <br> to attack, gain <span class=\"upgrade\">8</span> <br> <span class=\"keyword\">Block.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Apply 3 <span class=\"keyword\">Cold.</span> <br> If the enemy intends <br> to attack, gain 5 <br> <span class=\"keyword\">Block.</span>",
+    "UPGRADED_DESCRIPTION": "Apply <span class=\"upgrade\">5</span> <span class=\"keyword\">Cold.</span> <br> If the enemy intends <br> to attack, gain <span class=\"upgrade\">8</span> <br> <span class=\"keyword\">Block.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -986,9 +1063,10 @@
   "hydrologistmod:PersonalRaincloud": {
     "NAME": "Personal Raincloud",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Create a <span class=\"keyword\">Raincloud</span> <br> and <span class=\"keyword\">Pair</span> it with a card <br> in your hand. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Upgrade</span> a card in <br> your hand, then create <br> an <span class=\"keyword\">Upgraded</span> <br> <span class=\"keyword\">Raincloud</span> and <span class=\"keyword\">Pair</span> it <br> with it. <br> <span class=\"keyword\">Exhaust.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Create a <span class=\"keyword\">Raincloud</span> <br> and <span class=\"keyword\">Pair</span> it with a card <br> in your hand. <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Upgrade</span> a card in <br> your hand, then create <br> an <span class=\"keyword\">Upgraded</span> <br> <span class=\"keyword\">Raincloud</span> and <span class=\"keyword\">Pair</span> it <br> with it. <br> <span class=\"keyword\">Exhaust.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -1000,9 +1078,10 @@
   "hydrologistmod:Siphon": {
     "NAME": "Siphon",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Choose a card in your <br> hand. Copy its <br> <span class=\"keyword\">Mutable</span> effects onto <br> this card's <span class=\"keyword\">Pair,</span> then <br> <span class=\"keyword\">Transmute</span> it. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Choose a card in your <br> hand. Copy its <br> <span class=\"keyword\">Mutable</span> effects onto <br> this card's <span class=\"keyword\">Pair,</span> then <br> <span class=\"keyword\">Transmute</span> it. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Choose a card in your <br> hand. Copy its <br> <span class=\"keyword\">Mutable</span> effects onto <br> this card's <span class=\"keyword\">Pair,</span> then <br> <span class=\"keyword\">Transmute</span> it. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Choose a card in your <br> hand. Copy its <br> <span class=\"keyword\">Mutable</span> effects onto <br> this card's <span class=\"keyword\">Pair,</span> then <br> <span class=\"keyword\">Transmute</span> it. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -1015,9 +1094,10 @@
   "hydrologistmod:OccludingMist": {
     "NAME": "Occluding Mist",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Gain 6 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">9</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Gain 6 <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">9</span> <span class=\"keyword\">Block.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "COMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -1029,9 +1109,10 @@
   "hydrologistmod:Aqueducts": {
     "NAME": "Aqueducts",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Whenever you draw <br> an extra card, deal 2 <br> damage to ALL <br> enemies. <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you draw <br> an extra card, deal <span class=\"upgrade\">4</span> <br> damage to ALL <br> enemies. <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Whenever you draw <br> an extra card, deal 2 <br> damage to ALL <br> enemies.",
+    "UPGRADED_DESCRIPTION": "Whenever you draw <br> an extra card, deal <span class=\"upgrade\">4</span> <br> damage to ALL <br> enemies.",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "WATER",
     "KEYWORDS": []
@@ -1039,9 +1120,10 @@
   "hydrologistmod:DeepFreeze": {
     "NAME": "Deep Freeze",
     "COST": 0,
-    "UPGRADED_COST": 0,
-    "DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Cold,</span> apply 1 <br> additional <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Cold,</span> apply <span class=\"upgrade\">2</span> <br> additional <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Cold,</span> apply 1 <br> additional <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you apply <br> <span class=\"keyword\">Cold,</span> apply <span class=\"upgrade\">2</span> <br> additional <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -1053,9 +1135,10 @@
   "hydrologistmod:DimensionalIcicles": {
     "NAME": "Dimensional Icicles",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Upgrade</span> a <span class=\"keyword\">Corporeal</span> <br> card in your hand for <br> the rest of combat. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Upgrade</span> ALL <br> <span class=\"keyword\">Corporeal</span> cards in <br> your hand for the rest <br> of combat. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Upgrade</span> a <span class=\"keyword\">Corporeal</span> <br> card in your hand for <br> the rest of combat.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Upgrade</span> ALL <br> <span class=\"keyword\">Corporeal</span> cards in <br> your hand for the rest <br> of combat.",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -1066,9 +1149,10 @@
   "hydrologistmod:Slurry": {
     "NAME": "Slurry",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Enemy loses HP equal <br> to triple its <span class=\"keyword\">Heat</span> or <br> <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Exhaust.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Enemy loses HP equal <br> to triple its <span class=\"keyword\">Heat</span> or <br> <span class=\"keyword\">Cold.</span> <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Enemy loses HP equal <br> to triple its <span class=\"keyword\">Heat</span> or <br> <span class=\"keyword\">Cold.</span> <br> <span class=\"keyword\">Exhaust.</span>",
+    "UPGRADED_DESCRIPTION": "Enemy loses HP equal <br> to triple its <span class=\"keyword\">Heat</span> or <br> <span class=\"keyword\">Cold.</span>",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -1080,9 +1164,10 @@
   "hydrologistmod:AmalgamateWaters": {
     "NAME": "Amalgamate Waters",
     "COST": 2,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Deal 10 damage. <br> <span class=\"keyword\">Flow.</span> <br> Copy the <span class=\"keyword\">Mutable</span> <br> effects of any card <br> discarded this way <br> onto this card. <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">15</span> damage. <br> <span class=\"keyword\">Flow.</span> <br> Copy the <span class=\"keyword\">Mutable</span> <br> effects of any card <br> discarded this way <br> onto this card. <br> ",
+    "UPGRADED_COST": "2",
+    "DESCRIPTION": "Deal 10 damage. <br> <span class=\"keyword\">Flow.</span> <br> Copy the <span class=\"keyword\">Mutable</span> <br> effects of any card <br> discarded this way <br> onto this card.",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">15</span> damage. <br> <span class=\"keyword\">Flow.</span> <br> Copy the <span class=\"keyword\">Mutable</span> <br> effects of any card <br> discarded this way <br> onto this card.",
+    "RARITY": "RARE",
     "TYPE": "ATTACK",
     "SUBTYPE": "WATER",
     "KEYWORDS": [
@@ -1093,9 +1178,10 @@
   "hydrologistmod:AblativeShell": {
     "NAME": "Ablative Shell",
     "COST": 3,
-    "UPGRADED_COST": 2,
-    "DESCRIPTION": "Prevent the next time <br> you would lose HP. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Prevent the next time <br> you would lose HP. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">2</span>",
+    "DESCRIPTION": "Prevent the next time <br> you would lose HP. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Prevent the next time <br> you would lose HP. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -1105,9 +1191,10 @@
   "hydrologistmod:EncapsulatingIce": {
     "NAME": "Encapsulating Ice",
     "COST": -1,
-    "UPGRADED_COST": -1,
-    "DESCRIPTION": "Your <span class=\"keyword\">Pressure</span> <span class=\"keyword\">Blasts</span> <br> this combat are played <br> with X increased by X. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Your <span class=\"keyword\">Pressure</span> <span class=\"keyword\">Blasts</span> <br> this combat are played <br> with X increased by <br> X+1. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "-1",
+    "DESCRIPTION": "Your <span class=\"keyword\">Pressure</span> <span class=\"keyword\">Blasts</span> <br> this combat are played <br> with X increased by X. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Your <span class=\"keyword\">Pressure</span> <span class=\"keyword\">Blasts</span> <br> this combat are played <br> with X increased by <br> X+1. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
@@ -1117,9 +1204,10 @@
   "hydrologistmod:SeaFoam": {
     "NAME": "Sea Foam",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Deal 7 damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">10</span> damage. <br> <span class=\"keyword\">Transmute</span> a card in <br> your hand. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "COMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -1130,9 +1218,10 @@
   "hydrologistmod:MirageMist": {
     "NAME": "Mirage Mist",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain 4 <span class=\"keyword\">Block</span> <br> twice. <br> ",
-    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain <span class=\"upgrade\">6</span> <span class=\"keyword\">Block</span> <br> twice. <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain 4 <span class=\"keyword\">Block</span> <br> twice.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Mutable:</span> Gain <span class=\"upgrade\">6</span> <span class=\"keyword\">Block</span> <br> twice.",
+    "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -1143,9 +1232,10 @@
   "hydrologistmod:Exothermancy": {
     "NAME": "Exothermancy",
     "COST": 1,
-    "UPGRADED_COST": 1,
-    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply 2 <span class=\"keyword\">Heat</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply <span class=\"upgrade\">3</span> <span class=\"keyword\">Heat</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "1",
+    "DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply 2 <span class=\"keyword\">Heat</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Whenever you <br> <span class=\"keyword\">Transmute</span> a card, <br> apply <span class=\"upgrade\">3</span> <span class=\"keyword\">Heat</span> to ALL <br> enemies. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "POWER",
     "SUBTYPE": "STEAM",
     "KEYWORDS": [
@@ -1157,9 +1247,10 @@
   "hydrologistmod:GlacierBash": {
     "NAME": "Glacier Bash",
     "COST": 4,
-    "UPGRADED_COST": 3,
-    "DESCRIPTION": "Deal 25 damage. <br> When <span class=\"keyword\">Swapped,</span> <br> reduce this card's cost <br> by <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> for this combat. <br> <span class=\"keyword\">Swappable.</span> <br> ",
-    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">32</span> damage. <br> When <span class=\"keyword\">Swapped,</span> <br> reduce this card's cost <br> by <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> for this combat. <br> <span class=\"keyword\">Swappable.</span> <br> ",
+    "UPGRADED_COST": "<span class=\"upgrade\">3</span>",
+    "DESCRIPTION": "Deal 25 damage. <br> When <span class=\"keyword\">Swapped,</span> <br> reduce this card's cost <br> by <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> for this combat. <br> <span class=\"keyword\">Swappable.</span>",
+    "UPGRADED_DESCRIPTION": "Deal <span class=\"upgrade\">32</span> damage. <br> When <span class=\"keyword\">Swapped,</span> <br> reduce this card's cost <br> by <img src=\"/mana-symbol.png\" class=\"mana-symbol\"> for this combat. <br> <span class=\"keyword\">Swappable.</span>",
+    "RARITY": "UNCOMMON",
     "TYPE": "ATTACK",
     "SUBTYPE": "ICE",
     "KEYWORDS": [
