@@ -10,7 +10,7 @@ module.exports = {
                     id, name,
                     cost, upgraded_cost,
                     description, upgraded_description,
-                    type, subtype
+                    rarity, type, subtype
                 FROM cards
                 WHERE search_vector @@ plainto_tsquery($1);
             `
@@ -32,7 +32,7 @@ module.exports = {
                     id, name,
                     cost, upgraded_cost,
                     description, upgraded_description,
-                    type, subtype
+                    rarity, type, subtype
                 FROM cards;
             `
             const result = await db.query(statement, []);
