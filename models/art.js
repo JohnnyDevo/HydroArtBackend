@@ -26,7 +26,7 @@ module.exports = {
             const statement = `
                 INSERT INTO art_submissions
                 VALUES (DEFAULT, $1, $2, decode($3, 'base64'))
-                RETURNING *;
+                RETURNING id, card_id, user_id, encode(image, 'base64');
             `
             const arguments = [cardID, userID, buffer];
             const result = await db.query(statement, arguments);

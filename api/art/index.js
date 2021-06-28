@@ -1,4 +1,5 @@
 const router = require('express-promise-router');
+const artService = require('../../services/art');
 const validateUser = require('../users/validateUser');
 const checkCardId = require('../cards/checkCardId');
 const checkUserId = require('../users/checkUserId');
@@ -62,7 +63,16 @@ artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, (req, re
 //...can submit a new art piece
 artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile, (req, res, next) => {
     try {
-        res.status(404).send();
+        if (!req.body.cardID) {
+            res.status(401).send();
+        }
+        const art = await artService.create(req.body.cardID, req.user.id, req.file);
+        if (art) {
+            res.status(201).send(art);
+        } else {
+            console.warn('error occured when processing art');
+            next(new Error());
+        }
     } catch (error) {
         console.warn('error occured when submitting art');
         next(error);
