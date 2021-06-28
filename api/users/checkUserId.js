@@ -5,7 +5,7 @@ module.exports = async function checkUserId(req, res, next) {
         const userID = req.params.userID;
         //todo: validate id here?
         if (userID) {
-            const foundUser = await userService.findUser(userID);
+            const foundUser = await userService.findUser({ id: userID });
             if (foundUser) {
                 req.foundUser = foundUser;
                 return next();
