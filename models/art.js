@@ -21,6 +21,34 @@ module.exports = {
         }
     },
 
+    getDefaultArtsByCardIds: async function(cardIDArray) {
+        try {
+            const statement = `
+                SELECT 
+                    art_submissions.id AS id,
+                    art_submissions.card_id AS card_id,
+                    art_submissions.user_id AS user_id,
+                    encode(art_submissions.image, 'base64')
+                FROM
+                    art_submissions INNER JOIN default_art
+                ON
+                    art_submissions.id = default_art.art_id
+                WHERE
+                    default_art.card_id = ANY($1);
+            `
+            const arguments = [cardIDArray];
+
+            const result = await db.query(statement, arguments);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+
+        } catch (error) {
+            console.warn('error when retrieving default art from database');
+            throw(error);
+        }
+    },
+
     create: async function(cardID, userID, buffer) {
         try {
             const statement = `
