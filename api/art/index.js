@@ -2,6 +2,7 @@ const router = require('express-promise-router');
 const validateUser = require('../users/validateUser');
 const checkCardId = require('../cards/checkCardId');
 const checkUserId = require('../users/checkUserId');
+const acceptImage = require('../../services/acceptImage');
 
 const artRouter = router(); //mounted to '/art'. 
 
@@ -58,9 +59,9 @@ artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, (req, re
 
 //Users...
 //...can submit a new art piece
-artRouter.post('/', validateUser, (req, res, next) => {
+artRouter.post('/', validateUser, acceptImage, (req, res, next) => {
     try {
-        
+        //for now, we aren't doing anything with the image yet.
     } catch (error) {
         console.warn('error occured when submitting art');
         next(error);
