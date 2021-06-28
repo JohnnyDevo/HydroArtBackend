@@ -3,6 +3,23 @@ const cardService = require('../../services/cards');
 
 const cardsRouter = router(); //mounted to '/cards'
 
+cardsRouter.param('cardID', async (req, res, next, id) => {
+    try {
+        const cardID = id;
+        //todo: validate id here?
+        if (cardID) {
+            const card = await cardService.getById(cardID);
+            req.card = card;
+            next();
+        } else {
+            res.status(404).send();
+        }
+    } catch (error) {    
+        console.warn('error when searching for cards');
+        next(error);
+    }
+});
+
 cardsRouter.get('/', async (req, res, next) => {
     try {
         const cards = await cardService.getAll();
@@ -28,6 +45,10 @@ cardsRouter.get('/search', async (req, res, next) => {
         console.warn('error when searching for cards');
         next(error);
     }
+});
+
+cardsRouter.get('/:cardID', async (req, res, next) => {
+    res.status(200).json(req.card);
 });
 
 module.exports = cardsRouter;
