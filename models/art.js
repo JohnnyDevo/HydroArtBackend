@@ -49,6 +49,21 @@ module.exports = {
         }
     },
 
+    setDefaultArt: async function(cardID, artID) {
+        try {
+            const statement = `
+                INSERT INTO default_art
+                VALUES ($1, $2);
+            `
+            const arguments = [cardID, artID];
+            db.query(statement, arguments);
+            
+        } catch (error) {
+            console.warn('error when setting default art in database');
+            throw(error);
+        }
+    },
+
     create: async function(cardID, userID, buffer) {
         try {
             const statement = `
