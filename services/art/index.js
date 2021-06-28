@@ -20,8 +20,12 @@ module.exports = {
         image.rgba(true);                                           //transparency
         const buffer = await image.getBufferAsync(Jimp.MIME_PNG);   //convert all images to PNG, save to buffer
 
-        const result = await artdb.create(cardID, userID, buffer)
+        const result = await artdb.create(cardID, userID, buffer);
         if (result) {
+            const defaultArt = await artdb.getDefaultArtsByCardIds([result.card_id]);
+            if (!defaultArt[0]) {
+                artdb.setDefaultArt(result.card_id, result.id);
+            }
             return result;
         } else {
             console.warn('error when adding art to database');
