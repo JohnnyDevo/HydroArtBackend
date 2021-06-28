@@ -4,10 +4,13 @@ const validateUser = require('../validateUser');
 
 const usersRouter = router(); //mounted to '/users'
 
+//Users...
+//...can get the username and user ID for their current session
 usersRouter.get('/', validateUser, async (req, res, next) => {
     res.status(200).json(req.user);
 });
 
+//...can view their own profile
 usersRouter.get('/profile', validateUser, async (req, res, next) => {
     const user = await userService.findUser({ id: req.user.id });
     if (user) {
@@ -19,6 +22,7 @@ usersRouter.get('/profile', validateUser, async (req, res, next) => {
     }
 });
 
+//...can destroy their current session
 usersRouter.post('/logout', validateUser, async (req, res, next) => {
     try {
         await req.session.destroy();
@@ -29,36 +33,7 @@ usersRouter.post('/logout', validateUser, async (req, res, next) => {
     }
 });
 
-usersRouter.post('/', async (req, res, next) => {
-    if (!req.body.username || !req.body.password) {
-        return res.status(400).send('Needs both a username and a password');
-    }
-    try {
-        const dupe = await userService.findUser({ username: req.body.username });
-        if (dupe) {
-            res.status(409).send('Username is already taken');
-        } else {
-            const info = {
-                username: req.body.username,
-                password: req.body.password,
-                credits_name: req.body.credits_name,
-                credits_url: req.body.credits_url,
-                contact_info: req.body.contact_info
-            }
-            const newUser = await userService.createUser(info);
-            if (newUser) {
-                res.status(201).json(newUser);
-            } else {
-                console.warn('new user was not returned by service');
-                next(new Error());
-            }
-        }
-    } catch (error) {
-        console.warn('error during user creation');
-        next(error);
-    }
-});
-
+//...can update their user info
 usersRouter.put('/', validateUser, async (req, res, next) => {
     try {
         const user = await userService.findUser({ id: req.user.id });
@@ -123,6 +98,7 @@ usersRouter.put('/', validateUser, async (req, res, next) => {
     }
 });
 
+//...can delete their own account
 usersRouter.delete('/', validateUser, async (req, res, next) => {
     try {
         const user = await userService.findUser({ id: req.user.id });
@@ -139,6 +115,38 @@ usersRouter.delete('/', validateUser, async (req, res, next) => {
         await userService.deleteUser(req.user.id);
     } catch (error) {
         console.warn('error during user deletion');
+        next(error);
+    }
+});
+
+//Anyone...
+//...can create a new user
+usersRouter.post('/', async (req, res, next) => {
+    if (!req.body.username || !req.body.password) {
+        return res.status(400).send('Needs both a username and a password');
+    }
+    try {
+        const dupe = await userService.findUser({ username: req.body.username });
+        if (dupe) {
+            res.status(409).send('Username is already taken');
+        } else {
+            const info = {
+                username: req.body.username,
+                password: req.body.password,
+                credits_name: req.body.credits_name,
+                credits_url: req.body.credits_url,
+                contact_info: req.body.contact_info
+            }
+            const newUser = await userService.createUser(info);
+            if (newUser) {
+                res.status(201).json(newUser);
+            } else {
+                console.warn('new user was not returned by service');
+                next(new Error());
+            }
+        }
+    } catch (error) {
+        console.warn('error during user creation');
         next(error);
     }
 });
