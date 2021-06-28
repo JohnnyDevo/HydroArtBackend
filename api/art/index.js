@@ -78,8 +78,4 @@ artRouter.delete('/:artID', validateUser, checkArtId, (req, res, next) => {
     }
 });
 
-function checkArtist(req, res, next) {
-
-}
-
 module.exports = artRouter;
