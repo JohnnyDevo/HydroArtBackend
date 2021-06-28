@@ -46,11 +46,20 @@ const createKeywords = `
 const createArtSubmissions = `
     CREATE TABLE IF NOT EXISTS art_submissions (
         id SERIAL PRIMARY KEY,
-        card_id varchar(100),
-        user_id integer,
-        path_to_image varchar(120),
+        card_id varchar(100) NOT NULL,
+        user_id integer NOT NULL,
+        image bytea NOT NULL,
         FOREIGN KEY (card_id) REFERENCES cards(id),
         FOREIGN KEY (user_id) REFERENCES users(id)
+    )
+`
+
+const createDefaultArts = `
+    CREATE TABLE IF NOT EXISTS default_art (
+        card_id varchar(100) PRIMARY KEY,
+        art_id integer NOT NULL,
+        FOREIGN KEY (card_id) REFERENCES cards(id) ON DELETE CASCADE,
+        FOREIGN KEY (art_id) REFERENCES art_submissions(id) ON DELETE CASCADE
     )
 `
 
@@ -84,7 +93,8 @@ const addCard = `
     rarity = excluded.rarity,
     type = excluded.type,
     subtype = excluded.subtype,
-    swaps_to = excluded.swaps_to;
+    swaps_to = excluded.swaps_to,
+    search_vector = excluded.search_vector;
 `
 
 const addKeywordToCard = `
@@ -119,6 +129,9 @@ async function execute() {
 
         console.log(`creating table "art_submissions"`);
         await db.query(createArtSubmissions, []);
+
+        console.log(`creating table "default_art"`);
+        await db.query(createDefaultArts, []);
 
         console.log(`creating table "keywords_on_cards"`);
         await db.query(createKeywordsOnCards, []);
