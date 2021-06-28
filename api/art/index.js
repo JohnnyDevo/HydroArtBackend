@@ -66,6 +66,10 @@ artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile
         if (!req.body.cardID) {
             return res.status(401).send();
         }
+        const card = await cardService.getById(req.body.cardID);
+        if (!card) {
+            res.status(404).send();
+        }
         const art = await artService.create(req.body.cardID, req.user.id, req.file);
         if (art) {
             res.status(201).send(art);
