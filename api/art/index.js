@@ -1,5 +1,6 @@
 const router = require('express-promise-router');
 const artService = require('../../services/art');
+const cardService = require('../../services/cards');
 const validateUser = require('../users/validateUser');
 const checkCardId = require('../cards/checkCardId');
 const checkUserId = require('../users/checkUserId');
@@ -68,7 +69,7 @@ artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile
         }
         const card = await cardService.getById(req.body.cardID);
         if (!card) {
-            res.status(404).send();
+            return res.status(404).send();
         }
         const art = await artService.create(req.body.cardID, req.user.id, req.file);
         if (art) {

@@ -56,7 +56,7 @@ module.exports = {
                 FROM cards
                 WHERE id = $1;
             `
-            const result = await db.query(statement, []);
+            const result = await db.query(statement, [cardID]);
             if (result.rows?.length) {
                 return result.rows[0];
             }
