@@ -20,6 +20,9 @@ cardsRouter.param('cardID', async (req, res, next, id) => {
     }
 });
 
+
+//Anyone...
+//...can retrieve a list of cards
 cardsRouter.get('/', async (req, res, next) => {
     try {
         const cards = await cardService.getAll();
@@ -30,6 +33,7 @@ cardsRouter.get('/', async (req, res, next) => {
     }
 });
 
+//...can find a list of cards matching a search string
 cardsRouter.get('/search', async (req, res, next) => {
     try {
         const search_string = req.query.search;
@@ -47,6 +51,7 @@ cardsRouter.get('/search', async (req, res, next) => {
     }
 });
 
+//...can find a card by ID
 cardsRouter.get('/:cardID', async (req, res, next) => {
     res.status(200).json(req.card);
 });
