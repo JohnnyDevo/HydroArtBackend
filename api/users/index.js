@@ -1,6 +1,6 @@
 const router = require('express-promise-router');
 const userService = require('../../services/users');
-const validateUser = require('../validateUser');
+const validateUser = require('./validateUser');
 
 const usersRouter = router(); //mounted to '/users'
 
