@@ -21,14 +21,14 @@ module.exports = {
         }
     },
 
-    create: async function(cardID, userID, binary) {
+    create: async function(cardID, userID, buffer) {
         try {
             const statement = `
                 INSERT INTO art_submissions
-                VALUES (DEFAULT, $1, $2, $3)
+                VALUES (DEFAULT, $1, $2, decode($3, 'base64'))
                 RETURNING *;
             `
-            const arguments = [cardID, userID, binary];
+            const arguments = [cardID, userID, buffer];
             const result = await db.query(statement, arguments);
             if (result.rows?.length) {
                 return result.rows[0];
