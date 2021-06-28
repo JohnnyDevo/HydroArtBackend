@@ -10,5 +10,16 @@ module.exports = {
             console.warn('invalid art ID');
             throw new Error();
         }
+    },
+
+    create: async function(cardID, userID, buffer) {
+        //todo: validate the image and resize
+        const result = await artdb.create(cardID, userID, buffer)
+        if (result) {
+            return result;
+        } else {
+            console.warn('error when adding art to database');
+            throw new Error();
+        }
     }
 }
