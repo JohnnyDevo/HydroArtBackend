@@ -23,7 +23,7 @@ module.exports = {
         const result = await artdb.create(cardID, userID, buffer);
         if (result) {
             const defaultArt = await artdb.getDefaultArtsByCardIds([result.card_id]);
-            if (!defaultArt[0]) {
+            if (!defaultArt) {
                 artdb.setDefaultArt(result.card_id, result.id);
             }
             return result;
