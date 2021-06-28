@@ -10,7 +10,7 @@ const artRouter = router(); //mounted to '/art'.
 
 //Anyone...
 //...can retrieve all art info
-artRouter.get('/', (req, res, next) => {
+artRouter.get('/', async (req, res, next) => {
     try {
         
     } catch (error) {
@@ -20,7 +20,7 @@ artRouter.get('/', (req, res, next) => {
 });
 
 //...can retrieve art info by info ID
-artRouter.get('/:artID', checkArtId, (req, res, next) => {
+artRouter.get('/:artID', checkArtId, async (req, res, next) => {
     try {
         
     } catch (error) {
@@ -30,7 +30,7 @@ artRouter.get('/:artID', checkArtId, (req, res, next) => {
 });
 
 //...can retrieve all art info by card ID
-artRouter.get('/cards/:cardID', checkCardId, (req, res, next) => {
+artRouter.get('/cards/:cardID', checkCardId, async (req, res, next) => {
     try {
         
     } catch (error) {
@@ -40,7 +40,7 @@ artRouter.get('/cards/:cardID', checkCardId, (req, res, next) => {
 });
 
 //...can retrieve all art info by artist ID
-artRouter.get('/users/:userID', checkUserId, (req, res, next) => {
+artRouter.get('/users/:userID', checkUserId, async (req, res, next) => {
     try {
         
     } catch (error) {
@@ -50,7 +50,7 @@ artRouter.get('/users/:userID', checkUserId, (req, res, next) => {
 });
 
 //...can retrieve all art info by card ID *and* artist ID
-artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, (req, res, next) => {
+artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, async (req, res, next) => {
     try {
         
     } catch (error) {
@@ -61,7 +61,7 @@ artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, (req, re
 
 //Users...
 //...can submit a new art piece
-artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile, (req, res, next) => {
+artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile, async (req, res, next) => {
     try {
         if (!req.body.cardID) {
             res.status(401).send();
@@ -81,7 +81,7 @@ artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile
 
 //Art owners...
 //...can delete an art piece by ID
-artRouter.delete('/:artID', validateUser, checkArtId, (req, res, next) => {
+artRouter.delete('/:artID', validateUser, checkArtId, async (req, res, next) => {
     try {
         
     } catch (error) {
