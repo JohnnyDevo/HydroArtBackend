@@ -17,7 +17,7 @@ module.exports = {
 
         const image = await Jimp.read(file.buffer);                 //begin image manipulation
         image.resize(500, 380);                                     //size of larger card images
-        image.rgba(false);                                          //no transparency
+        image.rgba(true);                                           //transparency
         const buffer = await image.getBufferAsync(Jimp.MIME_PNG);   //convert all images to PNG, save to buffer
 
         const result = await artdb.create(cardID, userID, buffer)

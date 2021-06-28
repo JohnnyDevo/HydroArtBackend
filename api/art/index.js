@@ -64,7 +64,7 @@ artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, async (r
 artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile, async (req, res, next) => {
     try {
         if (!req.body.cardID) {
-            res.status(401).send();
+            return res.status(401).send();
         }
         const art = await artService.create(req.body.cardID, req.user.id, req.file);
         if (art) {

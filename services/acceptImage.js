@@ -30,7 +30,7 @@ function interpretFile(req, res, next) { //analyze the file to find actual type
 }
 
 function testMimetype(mimetype) {
-    if (mimetype == "image/png" || file.mimetype == "image/jpeg" || file.mimetype == "image/bmp") { //only accept basic image types
+    if (mimetype == "image/png" || mimetype == "image/jpeg" || mimetype == "image/bmp") { //only accept basic image types
         return true;
     } else {
         return false;
