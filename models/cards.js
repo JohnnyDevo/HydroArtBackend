@@ -44,7 +44,7 @@ module.exports = {
         }
     },
 
-    getById: async function(cardID) {
+    getByIds: async function(cardIDArray) {
         try {
             
             const statement = `
@@ -54,11 +54,12 @@ module.exports = {
                     description, upgraded_description,
                     rarity, type, subtype, swaps_to
                 FROM cards
-                WHERE id = $1;
+                WHERE id = ANY($1);
             `
-            const result = await db.query(statement, [cardID]);
+            const parameters = [cardIDArray]
+            const result = await db.query(statement, parameters);
             if (result.rows?.length) {
-                return result.rows[0];
+                return result.rows;
             }
 
         } catch (error) {

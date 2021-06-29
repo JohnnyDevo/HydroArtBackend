@@ -43,8 +43,8 @@ cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
     const keywords = keywordService.getAllByCardId(req.card.id);
     let swapsTo;
     if (req.card.swaps_to) {
-        swapsTo = await cardService.getById(req.card.swaps_to);
-        swapsTo.art = (await artService.getDefaultArtsByCardIds([swapsTo.id]))[0];
+        swapsTo = await cardService.getByIds([req.card.swaps_to]);
+        swapsTo[0].art = (await artService.getDefaultArtsByCardIds([swapsTo.id]))[0];
     }
 
     res.status(200).json({
@@ -52,7 +52,7 @@ cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
         arts: await arts,
         defaultArtID: (await defaultArtID)[0].art_id,
         keywords: await keywords,
-        swapsTo: swapsTo
+        swapsTo: swapsTo[0]
     });
 });
 

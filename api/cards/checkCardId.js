@@ -5,9 +5,9 @@ module.exports = async function checkCard(req, res, next) {
         const cardID = req.params.cardID;
         //todo: validate id here?
         if (cardID) {
-            const card = await cardService.getById(cardID);
-            if (card) {
-                req.card = card;
+            const cards = await cardService.getByIds([cardID]);
+            if (cards) {
+                req.card = cards[0];
                 return next();
             }
         }
