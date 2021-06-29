@@ -10,7 +10,7 @@ module.exports = {
                     id, name,
                     cost, upgraded_cost,
                     description, upgraded_description,
-                    rarity, type, subtype
+                    rarity, type, subtype, swaps_to
                 FROM cards
                 WHERE search_vector @@ plainto_tsquery($1);
             `
@@ -32,7 +32,7 @@ module.exports = {
                     id, name,
                     cost, upgraded_cost,
                     description, upgraded_description,
-                    rarity, type, subtype
+                    rarity, type, subtype, swaps_to
                 FROM cards;
             `
             const result = await db.query(statement, []);
@@ -52,7 +52,7 @@ module.exports = {
                     id, name,
                     cost, upgraded_cost,
                     description, upgraded_description,
-                    rarity, type, subtype
+                    rarity, type, subtype, swaps_to
                 FROM cards
                 WHERE id = $1;
             `
