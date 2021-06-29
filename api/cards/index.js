@@ -38,11 +38,12 @@ cardsRouter.get('/search', async (req, res, next) => {
 //...can find all info relating to a card by ID
 cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
     const arts = artService.getAllByCardId(req.card.id);
-    
+    const defaultArtID = getDefaultArtsByCardIds(req.card.id)[0];
+
     res.status(200).json({
         card: req.card,
         arts: arts,
-        defaultArtID: 0,
+        defaultArtID: defaultArtID,
         keywords: {},
         swapsTo: {}
     });
