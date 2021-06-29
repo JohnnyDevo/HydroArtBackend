@@ -24,6 +24,11 @@ module.exports = {
         }
     },
 
+    getDefaultArtsByCardIds: async function(cardIDArray) {
+        const result = artdb.getDefaultArtsByCardIds(cardIDArray);
+        return result;
+    },
+
     create: async function(cardID, userID, file) {
 
         const image = await Jimp.read(file.buffer);                 //begin image manipulation
