@@ -49,6 +49,25 @@ module.exports = {
         }
     },
 
+    getAllArtsByCardId: async function(cardID) {
+        try {
+            const statement = `
+                SELECT id, card_id, user_id, encode(image, 'base64')
+                FROM art_submissions
+                WHERE card_id = $1;
+            `
+            const arguments = [cardID];
+
+            const result = await db.query(statement, arguments);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+            
+        } catch (error) {
+            console.warn('error when retrieving arts from database');
+        }
+    },
+
     setDefaultArt: async function(cardID, artID) {
         try {
             const statement = `

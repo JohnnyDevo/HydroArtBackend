@@ -13,6 +13,17 @@ module.exports = {
         }
     },
 
+    getAllByCardId: async function(cardID) {
+        //todo: security measures on ID string?
+        if (cardID) {
+            const result = await artdb.getAllArtsByCardId(cardID);
+            return result;
+        } else {
+            console.warn('invalid card ID');
+            throw new Error();
+        }
+    },
+
     create: async function(cardID, userID, file) {
 
         const image = await Jimp.read(file.buffer);                 //begin image manipulation

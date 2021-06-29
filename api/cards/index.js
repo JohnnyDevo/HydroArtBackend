@@ -1,5 +1,6 @@
 const router = require('express-promise-router');
 const cardService = require('../../services/cards');
+const artService = require('../../services/art');
 const checkCardId = require('./checkCardId');
 
 const cardsRouter = router(); //mounted to '/cards'
@@ -34,9 +35,17 @@ cardsRouter.get('/search', async (req, res, next) => {
     }
 });
 
-//...can find a card by ID
+//...can find all info relating to a card by ID
 cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
-    res.status(200).json(req.card);
+    const arts = artService.getAllByCardId(req.card.id);
+    
+    res.status(200).json({
+        card: req.card,
+        arts: arts,
+        defaultArtID: 0,
+        keywords: {},
+        swapsTo: {}
+    });
 });
 
 module.exports = cardsRouter;
