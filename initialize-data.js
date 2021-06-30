@@ -73,6 +73,13 @@ const createKeywordsOnCards = `
     )
 `
 
+const createRarityOrder = `
+    CREATE TABLE IF NOT EXISTS card_rarity_order {
+        id integer PRIMARY_KEY,
+        rarity_name varchar(20)
+    }
+`
+
 const addKeyword = `
     INSERT INTO keywords
     VALUES ($1, $2, $3)
@@ -101,6 +108,16 @@ const addKeywordToCard = `
     INSERT INTO keywords_on_cards
     VALUES ($1, $2)
     ON CONFLICT DO NOTHING;
+`
+
+const addRarityOrder = `
+    INSERT INTO card_rarity_order
+    VALUES
+        (1, BASIC),
+        (2, COMMON),
+        (3, UNCOMMON),
+        (4, RARE),
+        (5, SPECIAL)
 `
 
 async function execute() {
@@ -135,6 +152,12 @@ async function execute() {
 
         console.log(`creating table "keywords_on_cards"`);
         await db.query(createKeywordsOnCards, []);
+
+        console.log(`creating table "card_rarity_order"`);
+        await db.query(createRarityOrder, []);
+
+        console.log(`   defining rarity orders`);
+        await db.query(addRarityOrder, []);
 
         console.log("reading keyword data from .json");
         const keywordData = JSON.parse(fs.readFileSync('./exports/hydro-keywords.json'));
