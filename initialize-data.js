@@ -113,11 +113,11 @@ const addKeywordToCard = `
 const addRarityOrder = `
     INSERT INTO card_rarity_order
     VALUES
-        (1, BASIC),
-        (2, COMMON),
-        (3, UNCOMMON),
-        (4, RARE),
-        (5, SPECIAL)
+        (1, 'BASIC'),
+        (2, 'COMMON'),
+        (3, 'UNCOMMON'),
+        (4, 'RARE'),
+        (5, 'SPECIAL');
 `
 
 async function execute() {
@@ -156,7 +156,7 @@ async function execute() {
         console.log(`creating table "card_rarity_order"`);
         await db.query(createRarityOrder, []);
 
-        console.log(`   defining rarity orders`);
+        console.log(`    defining rarity orders`);
         await db.query(addRarityOrder, []);
 
         console.log("reading keyword data from .json");
