@@ -18,7 +18,7 @@ module.exports = {
             const parameters = [cardID];
             const result = await db.query(statement, parameters);
             if (result.rows?.length) {
-                return result.rows[0];
+                return result.rows;
             }
 
         } catch (error) {

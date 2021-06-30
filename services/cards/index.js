@@ -44,7 +44,7 @@ module.exports = {
 
     getByIds: async function(cardIDArray) {
         //todo: security measures on ID string?
-        if (cardID) {
+        if (cardIDArray) {
             const result = await cards.getByIds(cardIDArray);
             return result;
         } else {

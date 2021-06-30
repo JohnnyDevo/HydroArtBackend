@@ -39,20 +39,27 @@ cardsRouter.get('/search', async (req, res, next) => {
 //...can find all info relating to a card by ID
 cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
     const arts = artService.getAllByCardId(req.card.id);
-    const defaultArtID = artService.getDefaultArtsByCardIds([req.card.id]);
+    const defaultArt = await artService.getDefaultArtsByCardIds([req.card.id]);
+    let defaultArtId;
+    if (defaultArt) {
+        defaultArtId = defaultArt[0].id;
+    }
     const keywords = keywordService.getAllByCardId(req.card.id);
     let swapsTo;
     if (req.card.swaps_to) {
-        swapsTo = await cardService.getByIds([req.card.swaps_to]);
-        swapsTo[0].art = (await artService.getDefaultArtsByCardIds([swapsTo.id]))[0];
+        swapsTo = (await cardService.getByIds([req.card.swaps_to]))[0];
+        const art = await artService.getDefaultArtsByCardIds([swapsTo.id]);
+        if (art) {
+            swapsTo.art = art[0];
+        }
     }
 
     res.status(200).json({
         card: req.card,
         arts: await arts,
-        defaultArtID: (await defaultArtID)[0].art_id,
+        defaultArtID: defaultArtId,
         keywords: await keywords,
-        swapsTo: swapsTo[0]
+        swapsTo: swapsTo
     });
 });
 
