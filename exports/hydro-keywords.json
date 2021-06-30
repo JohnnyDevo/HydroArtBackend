@@ -39,6 +39,10 @@
     "NAME": "Cold",
     "DESCRIPTION": "A <span class=\"keyword\">Cool</span> enemy deals 15% less damage with Attacks. If a <span class=\"keyword\">Cool</span> enemy becomes <span class=\"keyword\">Hot,</span> remove it, it loses triple its <span class=\"keyword\">Cool</span> amount in HP, and apply <span class=\"keyword\">Thermal</span> <span class=\"keyword\">Shock</span> for 1 turn."
   },
+  "ethereal": {
+    "NAME": "Ethereal",
+    "DESCRIPTION": "If this card is in your hand at the end of turn, it is exhausted. Exhausted cards are removed from your deck until the end of combat."
+  },
   "hydrologistmod:transmute": {
     "NAME": "Transmute",
     "DESCRIPTION": "Transforms a card in combat into any card of the same rarity available to your current run. The new card deals 1 more damage and gains 1 more <span class=\"keyword\">Block</span> for the rest of combat. This effect stacks."

@@ -78,7 +78,8 @@
     "RARITY": "RARE",
     "TYPE": "POWER",
     "SUBTYPE": "ICE",
-    "KEYWORDS": []
+    "KEYWORDS": [],
+    "SWAPS_TO": "hydrologistmod:RazorIce"
   },
   "hydrologistmod:YawningAbyss": {
     "NAME": "Yawning Abyss",
@@ -148,7 +149,8 @@
     "KEYWORDS": [
       "block",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:CrystalIce"
   },
   "hydrologistmod:Defrost": {
     "NAME": "Defrost",
@@ -234,7 +236,8 @@
       "hydrologistmod:heat",
       "hydrologistmod:swappable",
       "[E]"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:FrostWhip"
   },
   "hydrologistmod:PureWater": {
     "NAME": "Pure Water",
@@ -262,7 +265,8 @@
     "KEYWORDS": [
       "block",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:LayeredShell"
   },
   "hydrologistmod:WaterWheel": {
     "NAME": "Water Wheel",
@@ -359,7 +363,8 @@
       "fleeting",
       "hydrologistmod:swappable",
       "exhaust"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:PurifyingSteam"
   },
   "hydrologistmod:UnstableStrike": {
     "NAME": "Unstable Strike",
@@ -371,7 +376,8 @@
     "TYPE": "ATTACK",
     "KEYWORDS": [
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:UnstableDefend"
   },
   "hydrologistmod:StormFront": {
     "NAME": "Storm Front",
@@ -564,7 +570,8 @@
       "block",
       "exhaust",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:OccludingMist"
   },
   "hydrologistmod:HighPressure": {
     "NAME": "High Pressure",
@@ -578,7 +585,8 @@
     "KEYWORDS": [
       "hydrologistmod:heat",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:DeepFreeze"
   },
   "hydrologistmod:Freeze": {
     "NAME": "Freeze",
@@ -591,7 +599,8 @@
     "SUBTYPE": "ICE",
     "KEYWORDS": [
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:Siphon"
   },
   "hydrologistmod:StormOfSleet": {
     "NAME": "Storm of Sleet",
@@ -602,7 +611,8 @@
     "RARITY": "RARE",
     "TYPE": "SKILL",
     "SUBTYPE": "ICE",
-    "KEYWORDS": []
+    "KEYWORDS": [],
+    "SWAPS_TO": "hydrologistmod:RazorIce"
   },
   "hydrologistmod:GhostlyMist": {
     "NAME": "Ghostly Mist",
@@ -628,7 +638,8 @@
     "SUBTYPE": "ICE",
     "KEYWORDS": [
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:TidalWave"
   },
   "hydrologistmod:Ripcurrent": {
     "NAME": "Ripcurrent",
@@ -658,7 +669,8 @@
     "KEYWORDS": [
       "[E]",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:Reservoir"
   },
   "hydrologistmod:GlacialSynthesis": {
     "NAME": "Glacial Synthesis",
@@ -781,7 +793,8 @@
     "RARITY": "UNCOMMON",
     "TYPE": "SKILL",
     "SUBTYPE": "STEAM",
-    "KEYWORDS": []
+    "KEYWORDS": [],
+    "SWAPS_TO": "hydrologistmod:RazorIce"
   },
   "hydrologistmod:PressureBlast": {
     "NAME": "Pressure Blast",
@@ -864,6 +877,20 @@
     "SUBTYPE": "WATER",
     "KEYWORDS": [
       "hydrologistmod:thermal shock"
+    ]
+  },
+  "hydrologistmod:Raincloud": {
+    "NAME": "Raincloud",
+    "COST": 0,
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "Gain 4 <span class=\"keyword\">Block</span>. <br> Draw a card. <br> <span class=\"keyword\">Swappable</span>.",
+    "UPGRADED_DESCRIPTION": "Gain <span class=\"upgrade\">7</span> <span class=\"keyword\">Block</span>. <br> Draw 1 cards. <br> <span class=\"keyword\">Swappable</span>.",
+    "RARITY": "SPECIAL",
+    "TYPE": "SKILL",
+    "SUBTYPE": "STEAM",
+    "KEYWORDS": [
+      "block",
+      "hydrologistmod:swappable"
     ]
   },
   "hydrologistmod:Blizzard": {
@@ -949,6 +976,23 @@
     ],
     "SWAPS_TO": "hydrologistmod:GlacierBash"
   },
+  "hydrologistmod:RazorIce": {
+    "NAME": "Razor Ice",
+    "COST": 0,
+    "UPGRADED_COST": "0",
+    "DESCRIPTION": "<span class=\"keyword\">Ethereal</span>. <span class=\"keyword\">Ebbing</span>. <br> <span class=\"keyword\">Mutable</span>: Gain 2 <span class=\"keyword\">Block</span>. <br> <span class=\"keyword\">Mutable</span>: Deal 3 <br> damage. <br> <span class=\"keyword\">Exhaust</span>.",
+    "UPGRADED_DESCRIPTION": "<span class=\"keyword\">Ethereal</span>. <span class=\"keyword\">Ebbing</span>. <br> <span class=\"keyword\">Mutable</span>: Gain <span class=\"upgrade\">3</span> <span class=\"keyword\">Block</span>. <br> <span class=\"keyword\">Mutable</span>: Deal <span class=\"upgrade\">4</span> <br> damage. <br> <span class=\"keyword\">Exhaust</span>.",
+    "RARITY": "SPECIAL",
+    "TYPE": "ATTACK",
+    "SUBTYPE": "ICE",
+    "KEYWORDS": [
+      "ethereal",
+      "hydrologistmod:ebbing",
+      "hydrologistmod:mutable",
+      "block",
+      "exhaust"
+    ]
+  },
   "hydrologistmod:Hydraulics": {
     "NAME": "Hydraulics",
     "COST": 1,
@@ -975,7 +1019,8 @@
       "hydrologistmod:heat",
       "exhaust",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:Ripcurrent"
   },
   "hydrologistmod:SteamPower": {
     "NAME": "Steam Power",
@@ -1073,7 +1118,8 @@
       "hydrologistmod:swappable",
       "exhaust",
       "upgrade"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:Raincloud"
   },
   "hydrologistmod:Siphon": {
     "NAME": "Siphon",
@@ -1186,7 +1232,8 @@
     "SUBTYPE": "ICE",
     "KEYWORDS": [
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:StagnantCloak"
   },
   "hydrologistmod:EncapsulatingIce": {
     "NAME": "Encapsulating Ice",
@@ -1199,7 +1246,8 @@
     "SUBTYPE": "ICE",
     "KEYWORDS": [
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:PressureBlast"
   },
   "hydrologistmod:SeaFoam": {
     "NAME": "Sea Foam",
@@ -1213,7 +1261,8 @@
     "KEYWORDS": [
       "hydrologistmod:transmute",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:HighTide"
   },
   "hydrologistmod:MirageMist": {
     "NAME": "Mirage Mist",
@@ -1242,7 +1291,8 @@
       "hydrologistmod:transmute",
       "hydrologistmod:heat",
       "hydrologistmod:swappable"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:Endothermancy"
   },
   "hydrologistmod:GlacierBash": {
     "NAME": "Glacier Bash",
@@ -1256,6 +1306,7 @@
     "KEYWORDS": [
       "hydrologistmod:swappable",
       "[E]"
-    ]
+    ],
+    "SWAPS_TO": "hydrologistmod:FlowingCurrents"
   }
 }
