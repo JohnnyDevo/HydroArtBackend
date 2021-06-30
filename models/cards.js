@@ -7,13 +7,16 @@ module.exports = {
 
             const statement = `
                 SELECT
-                    id, name,
-                    cost, upgraded_cost,
-                    description, upgraded_description,
-                    rarity, type, subtype, swaps_to
-                FROM cards
+                    cards.id AS id, cards.name AS name,
+                    cards.cost AS cost, cards.upgraded_cost AS upgraded_cost,
+                    cards.description AS description, cards.upgraded_description AS upgraded_description,
+                    cards.rarity AS rarity, cards.type AS type, cards.subtype AS subtype, cards.swaps_to AS swaps_to
+                FROM cards LEFT JOIN card_rarity_order
+                ON cards.rarity = card_rarity_order.rarity_name
                 WHERE search_vector @@ plainto_tsquery($1)
-                ORDER BY rarity;
+                ORDER BY 
+                    card_rarity_order.id,
+                    cards.name;
             `
             const parameters = [search_string];
             const result = await db.query(statement, parameters);
@@ -30,12 +33,15 @@ module.exports = {
 
             const statement = `
                 SELECT
-                    id, name,
-                    cost, upgraded_cost,
-                    description, upgraded_description,
-                    rarity, type, subtype, swaps_to
-                FROM cards
-                ORDER BY rarity;
+                    cards.id AS id, cards.name AS name,
+                    cards.cost AS cost, cards.upgraded_cost AS upgraded_cost,
+                    cards.description AS description, cards.upgraded_description AS upgraded_description,
+                    cards.rarity AS rarity, cards.type AS type, cards.subtype AS subtype, cards.swaps_to AS swaps_to
+                FROM cards LEFT JOIN card_rarity_order
+                ON cards.rarity = card_rarity_order.rarity_name
+                ORDER BY 
+                    card_rarity_order.id,
+                    cards.name;
             `
             const result = await db.query(statement, []);
             return result.rows;
@@ -51,13 +57,16 @@ module.exports = {
             
             const statement = `
                 SELECT
-                    id, name,
-                    cost, upgraded_cost,
-                    description, upgraded_description,
-                    rarity, type, subtype, swaps_to
-                FROM cards
+                    cards.id AS id, cards.name AS name,
+                    cards.cost AS cost, cards.upgraded_cost AS upgraded_cost,
+                    cards.description AS description, cards.upgraded_description AS upgraded_description,
+                    cards.rarity AS rarity, cards.type AS type, cards.subtype AS subtype, cards.swaps_to AS swaps_to
+                FROM cards LEFT JOIN card_rarity_order
+                ON cards.rarity = card_rarity_order.rarity_name
                 WHERE id = ANY($1)
-                ORDER BY rarity;
+                ORDER BY 
+                    card_rarity_order.id,
+                    cards.name;
             `
             const parameters = [cardIDArray]
             const result = await db.query(statement, parameters);
