@@ -15,7 +15,7 @@ module.exports = {
                 ON cards.rarity = card_rarity_order.rarity_name
                 WHERE search_vector @@ plainto_tsquery($1)
                 ORDER BY 
-                    card_rarity_order.id,
+                    card_rarity_order.order,
                     cards.name;
             `
             const parameters = [search_string];
@@ -40,7 +40,7 @@ module.exports = {
                 FROM cards LEFT JOIN card_rarity_order
                 ON cards.rarity = card_rarity_order.rarity_name
                 ORDER BY 
-                    card_rarity_order.id,
+                    card_rarity_order.order,
                     cards.name;
             `
             const result = await db.query(statement, []);
@@ -63,9 +63,9 @@ module.exports = {
                     cards.rarity AS rarity, cards.type AS type, cards.subtype AS subtype, cards.swaps_to AS swaps_to
                 FROM cards LEFT JOIN card_rarity_order
                 ON cards.rarity = card_rarity_order.rarity_name
-                WHERE id = ANY($1)
+                WHERE cards.id = ANY($1)
                 ORDER BY 
-                    card_rarity_order.id,
+                    card_rarity_order.order,
                     cards.name;
             `
             const parameters = [cardIDArray]
