@@ -75,7 +75,7 @@ const createKeywordsOnCards = `
 
 const createRarityOrder = `
     CREATE TABLE IF NOT EXISTS card_rarity_order (
-        id integer PRIMARY_KEY,
+        id integer PRIMARY KEY,
         rarity_name varchar(20)
     )
 `
