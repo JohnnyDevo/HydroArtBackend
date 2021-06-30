@@ -1,24 +1,24 @@
 const cards = require("../../models/cards");
 const artdb = require("../../models/art");
 
-async function addInfo(cards) {
+async function addInfo(cardsResult) {
     const artsCardIDArray = [];
     const swapsToIDArray = [];
-    for (const card in cards) {
-        if (!artsCardIDArray.includes(cards[card].id)) {
-            artsCardIDArray.push(cards[card].id);
+    for (const card in cardsResult) {
+        if (!artsCardIDArray.includes(cardsResult[card].id)) {
+            artsCardIDArray.push(cardsResult[card].id);
         }
-        if (cards[card].swaps_to) {
-            swapsToIDArray.push(cards[card].swaps_to);
-            if (!artsCardIDArray.includes(cards[card].swaps_to)) {
-                artsCardIDArray.push(cards[card].swaps_to);
+        if (cardsResult[card].swaps_to) {
+            swapsToIDArray.push(cardsResult[card].swaps_to);
+            if (!artsCardIDArray.includes(cardsResult[card].swaps_to)) {
+                artsCardIDArray.push(cardsResult[card].swaps_to);
             }
         }
     }
     const artResult = artdb.getDefaultArtsByCardIds(artsCardIDArray);
     const swapsResult = cards.getByIds(swapsToIDArray);
     const result = {
-        cards: cards,
+        cards: cardsResult,
         arts: await artResult,
         swaps: await swapsResult
     }
@@ -29,8 +29,8 @@ module.exports = {
     search: async function(search_string) {
         //todo: security measures on search string?
         if (search_string) {
-            const cardResult = await cards.search(search_string);
-            return await addInfo(cardResult);
+            const cardsResult = await cards.search(search_string);
+            return await addInfo(cardsResult);
         } else {
             console.warn('invalid search string');
             throw new Error();
@@ -38,8 +38,8 @@ module.exports = {
     },
 
     getAll: async function() {
-        const cardResult = await cards.getAll();
-        return await addInfo(cardResult);
+        const cardsResult = await cards.getAll();
+        return await addInfo(cardsResult);
     },
 
     getByIds: async function(cardIDArray) {
