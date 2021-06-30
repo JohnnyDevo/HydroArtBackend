@@ -12,7 +12,8 @@ module.exports = {
                     description, upgraded_description,
                     rarity, type, subtype, swaps_to
                 FROM cards
-                WHERE search_vector @@ plainto_tsquery($1);
+                WHERE search_vector @@ plainto_tsquery($1)
+                ORDER BY rarity;
             `
             const parameters = [search_string];
             const result = await db.query(statement, parameters);
@@ -33,7 +34,8 @@ module.exports = {
                     cost, upgraded_cost,
                     description, upgraded_description,
                     rarity, type, subtype, swaps_to
-                FROM cards;
+                FROM cards
+                ORDER BY rarity;
             `
             const result = await db.query(statement, []);
             return result.rows;
@@ -54,7 +56,8 @@ module.exports = {
                     description, upgraded_description,
                     rarity, type, subtype, swaps_to
                 FROM cards
-                WHERE id = ANY($1);
+                WHERE id = ANY($1)
+                ORDER BY rarity;
             `
             const parameters = [cardIDArray]
             const result = await db.query(statement, parameters);
