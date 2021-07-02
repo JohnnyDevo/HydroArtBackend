@@ -23,12 +23,7 @@ artRouter.get('/', async (req, res, next) => {
 
 //...can retrieve art info by info ID
 artRouter.get('/:artID', checkArtId, async (req, res, next) => {
-    try {
-        
-    } catch (error) {
-        console.warn('error occured when getting art info');
-        next(error);
-    }
+    res.status(200).send(req.art);
 });
 
 //...can retrieve all art info by card ID
