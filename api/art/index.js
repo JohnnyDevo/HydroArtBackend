@@ -23,13 +23,14 @@ artRouter.get('/', async (req, res, next) => {
 
 //...can retrieve art info by info ID
 artRouter.get('/:artID', checkArtId, async (req, res, next) => {
-    res.status(200).send(req.art);
+    res.status(200).json(req.art);
 });
 
 //...can retrieve all art info by card ID
 artRouter.get('/cards/:cardID', checkCardId, async (req, res, next) => {
     try {
-        
+        const allArt = await artService.getAllByCardId(req.card.id);
+        res.status(200).json(allArt);
     } catch (error) {
         console.warn('error occured when getting art info');
         next(error);
