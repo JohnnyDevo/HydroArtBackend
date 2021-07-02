@@ -52,5 +52,16 @@ module.exports = {
     getAll: async function() {
         const result = await artdb.getAll();
         return result;
+    },
+
+    getAllArtsByUserId: async function(userID) {
+        //todo: security measures on ID string?
+        if (userID) {
+            const result = await artdb.getAllArtsByUserId(userID);
+            return result;
+        } else {
+            console.warn('invalid user id');
+            throw new Error();
+        }
     }
 }
