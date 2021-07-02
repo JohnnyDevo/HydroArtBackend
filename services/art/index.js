@@ -74,5 +74,10 @@ module.exports = {
             console.warn('invalid input');
             throw new Error();
         }
+    },
+
+    getAllContributors: async function() {
+        const result = await artdb.getAllContributors();
+        return result;
     }
 }

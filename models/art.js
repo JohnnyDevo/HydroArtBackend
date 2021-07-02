@@ -154,5 +154,33 @@ module.exports = {
             console.warn('error when retrieving arts from database');
             throw(error);
         }
+    },
+
+    getAllContributors: async function() {
+        try {
+            const statement = `
+                SELECT 
+                    users.credits_name,
+                    users.credits_url,
+                    COUNT(art_submissions.id) AS contributions,
+                    users.id,
+                    users.username
+                FROM 
+                    art_submissions INNER JOIN users
+                    ON art_submissions.user_id = users.id
+                GROUP BY
+                    users.credits_name
+                ORDER BY
+                    contributions DESC;
+            `
+            
+            const result = await db.query(statement, []);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+        } catch (error) {
+            console.warn('error when retrieving contribution info from database');
+            throw(error);
+        }
     }
 }
