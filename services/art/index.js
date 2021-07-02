@@ -63,5 +63,16 @@ module.exports = {
             console.warn('invalid user id');
             throw new Error();
         }
+    },
+
+    getAllArtsByCardAndUserIds: async function(cardID, userID) {
+        //todo: security measures on id strings?
+        if (cardID && userID) {
+            const result = await artdb.getAllArtsByCardAndUserIds(cardID, userID);
+            return result;
+        } else {
+            console.warn('invalid input');
+            throw new Error();
+        }
     }
 }

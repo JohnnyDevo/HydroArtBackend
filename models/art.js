@@ -135,5 +135,24 @@ module.exports = {
             console.warn('error when retrieving arts from database');
             throw(error);
         }
+    },
+
+    getAllArtsByCardAndUserIds: async function(cardID, userID) {
+        try {
+            const statement = `
+                SELECT id, card_id, user_id, encode(image, 'base64')
+                FROM art_submissions
+                WHERE card_id = $1 AND user_id = $2;
+            `
+            const arguments = [cardID, userID];
+
+            const result = await db.query(statement, arguments);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+        } catch (error) {
+            console.warn('error when retrieving arts from database');
+            throw(error);
+        }
     }
 }

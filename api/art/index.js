@@ -61,7 +61,8 @@ artRouter.get('/users', (req, res, next) => {
 //...can retrieve all art info by card ID *and* artist ID
 artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, async (req, res, next) => {
     try {
-        
+        const allArt = await artService.getAllArtsByCardAndUserIds(req.card.id, req.foundUser.id);
+        res.status(200).json(allArt);
     } catch (error) {
         console.warn('error occured when getting art info');
         next(error);
