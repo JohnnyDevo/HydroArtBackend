@@ -50,6 +50,16 @@ artRouter.get('/users/:userID', checkUserId, async (req, res, next) => {
     }
 });
 
+//...can retrieve a list of all artists and how many pieces they've contributed
+artRouter.get('/users', (req, res, next) => {
+    try {
+        
+    } catch (error) {
+        console.warn('error occured when getting artist info');
+        next(error);
+    }
+});
+
 //...can retrieve all art info by card ID *and* artist ID
 artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, async (req, res, next) => {
     try {
