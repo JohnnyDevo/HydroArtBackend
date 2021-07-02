@@ -1,6 +1,7 @@
 const router = require('express-promise-router');
 const artService = require('../../services/art');
 const cardService = require('../../services/cards');
+const userService = require('../../services/users');
 const validateUser = require('../users/validateUser');
 const checkCardId = require('../cards/checkCardId');
 const checkUserId = require('../users/checkUserId');
@@ -98,7 +99,20 @@ artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile
 //...can delete an art piece by ID
 artRouter.delete('/:artID', validateUser, checkArtId, async (req, res, next) => {
     try {
+        if (req.foundUser.id !== req.art.user_id) {
+            return res.status(403).send();
+        }
+
+        if (!req.body.password) {
+            return res.status(401).send();
+        }
+
+        if (!userService.validatePassword(req.user, req.body.password)) {
+            return res.status(401).send();
+        }
         
+        await artService.delete(req.art.id);
+        res.status(204).send();
     } catch (error) {
         console.warn('error occured when deleting art');
         next(error);

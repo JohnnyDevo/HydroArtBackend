@@ -182,5 +182,19 @@ module.exports = {
             console.warn('error when retrieving contribution info from database');
             throw(error);
         }
+    },
+
+    deleteArtById: async function(artID) {
+        try {
+            const statement = `
+                DELETE FROM art_submissions
+                WHERE id = $1;
+            `
+
+            await db.query(statement, []);
+        } catch (error) {
+            console.warn('error when deleting from art submissions');
+            throw(error);
+        }
     }
 }

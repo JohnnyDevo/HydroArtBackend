@@ -79,5 +79,14 @@ module.exports = {
     getAllContributors: async function() {
         const result = await artdb.getAllContributors();
         return result;
+    },
+
+    delete: async function(art) {
+        await artdb.deleteArtById(art.id);
+        const defaultArt = await artdb.getDefaultArtsByCardIds([art.card_id]);
+        if (!defaultArt) {
+            const arts = await artdb.getAllArtsByCardId(art.card_id);
+            artdb.setDefaultArt(art.card_id, arts[0].id);
+        }
     }
 }
