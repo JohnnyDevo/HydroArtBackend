@@ -44,7 +44,7 @@ usersRouter.put('/', validateUser, async (req, res, next) => {
                 return res.status(400).send('Password required to update account info');
             } else {
                 if (!userService.validatePassword(user, req.body.old_password)) {
-                    res.status(401).send();
+                    return res.status(401).send();
                 }
             }
 
