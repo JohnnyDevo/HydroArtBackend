@@ -13,7 +13,8 @@ const artRouter = router(); //mounted to '/art'.
 //...can retrieve all art info
 artRouter.get('/', async (req, res, next) => {
     try {
-        
+        const allArt = await artService.getAll();
+        res.status(200).json(allArt);
     } catch (error) {
         console.warn('error occured when getting art info');
         next(error);

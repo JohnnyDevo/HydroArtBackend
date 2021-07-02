@@ -100,5 +100,21 @@ module.exports = {
             console.warn('error when inserting image submission into database');
             throw(error);
         }
+    },
+
+    getAll: async function() {
+        try {
+            const statement = `
+                SELECT id, card_id, user_id, encode(image, 'base64')
+                FROM art_submissions;
+            `
+            const result = await db.query(statement, []);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+        } catch (error) {
+            console.warn('error when retrieving arts from database');
+            throw(error);
+        }
     }
 }

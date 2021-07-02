@@ -47,5 +47,10 @@ module.exports = {
             console.warn('error when adding art to database');
             throw new Error();
         }
+    },
+
+    getAll: async function() {
+        const result = await artdb.getAll();
+        return result;
     }
 }
