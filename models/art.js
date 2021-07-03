@@ -105,8 +105,15 @@ module.exports = {
     getAll: async function() {
         try {
             const statement = `
-                SELECT id, card_id, user_id, encode(image, 'base64')
-                FROM art_submissions;
+                SELECT 
+                    art_submissions.id AS id, 
+                    art_submissions.card_id AS card_id,
+                    art_submissions.user_id AS user_id,
+                    users.credits_name AS credits_name,
+                    users.credits_url AS credits_url, 
+                    encode(art_submissions.image, 'base64')
+                FROM art_submissions LEFT JOIN users
+                    ON art_submissions.user_id = users.id;
             `
             const result = await db.query(statement, []);
             if (result.rows?.length) {
