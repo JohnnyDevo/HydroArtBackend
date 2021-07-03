@@ -50,7 +50,7 @@ artRouter.get('/users/:userID', checkUserId, async (req, res, next) => {
 });
 
 //...can retrieve a list of all artists and how many pieces they've contributed
-artRouter.get('/users', (req, res, next) => {
+artRouter.get('/users', async (req, res, next) => {
     try {
         const contributors = await artService.getAllContributors();
         res.status(200).json(contributors);
