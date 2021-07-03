@@ -22,11 +22,6 @@ artRouter.get('/', async (req, res, next) => {
     }
 });
 
-//...can retrieve art info by info ID
-artRouter.get('/:artID', checkArtId, async (req, res, next) => {
-    res.status(200).json(req.art);
-});
-
 //...can retrieve all art info by card ID
 artRouter.get('/cards/:cardID', checkCardId, async (req, res, next) => {
     try {
@@ -58,6 +53,11 @@ artRouter.get('/users', async (req, res, next) => {
         console.warn('error occured when getting artist info');
         next(error);
     }
+});
+
+//...can retrieve art info by info ID
+artRouter.get('/:artID', checkArtId, async (req, res, next) => {
+    res.status(200).json(req.art);
 });
 
 //...can retrieve all art info by card ID *and* artist ID

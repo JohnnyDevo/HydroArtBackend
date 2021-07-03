@@ -196,16 +196,17 @@ module.exports = {
         try {
             const statement = `
                 SELECT 
-                    users.credits_name,
-                    users.credits_url,
-                    COUNT(art_submissions.id) AS contributions,
-                    users.id,
-                    users.username
+                    users.credits_name AS credits_name,
+                    users.credits_url AS credits_url,
+                    COUNT(*) AS contributions,
+                    users.id AS user_id
                 FROM 
                     art_submissions INNER JOIN users
                     ON art_submissions.user_id = users.id
                 GROUP BY
-                    users.credits_name
+                    users.credits_name,
+                    users.credits_url,
+                    users.id
                 ORDER BY
                     contributions DESC;
             `
