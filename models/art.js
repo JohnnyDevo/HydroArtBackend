@@ -52,9 +52,18 @@ module.exports = {
     getAllArtsByCardId: async function(cardID) {
         try {
             const statement = `
-                SELECT id, card_id, user_id, encode(image, 'base64')
-                FROM art_submissions
-                WHERE card_id = $1;
+                SELECT 
+                    art_submissions.id AS id, 
+                    art_submissions.card_id AS card_id,
+                    cards.name AS card_name,
+                    art_submissions.user_id AS user_id,
+                    users.credits_name AS credits_name,
+                    users.credits_url AS credits_url, 
+                    encode(art_submissions.image, 'base64')
+                FROM art_submissions 
+                LEFT JOIN users ON art_submissions.user_id = users.id
+                LEFT JOIN cards ON art_submissions.card_id = cards.id;
+                WHERE art_submissions.card_id = $1;
             `
             const arguments = [cardID];
 
@@ -130,9 +139,18 @@ module.exports = {
     getAllArtsByUserId: async function(userID) {
         try {
             const statement = `
-                SELECT id, card_id, user_id, encode(image, 'base64')
-                FROM art_submissions
-                WHERE user_id = $1;
+                SELECT 
+                    art_submissions.id AS id, 
+                    art_submissions.card_id AS card_id,
+                    cards.name AS card_name,
+                    art_submissions.user_id AS user_id,
+                    users.credits_name AS credits_name,
+                    users.credits_url AS credits_url, 
+                    encode(art_submissions.image, 'base64')
+                FROM art_submissions 
+                LEFT JOIN users ON art_submissions.user_id = users.id
+                LEFT JOIN cards ON art_submissions.card_id = cards.id;
+                WHERE art_submissions.user_id = $1;
             `
             const arguments = [userID];
 
@@ -149,9 +167,18 @@ module.exports = {
     getAllArtsByCardAndUserIds: async function(cardID, userID) {
         try {
             const statement = `
-                SELECT id, card_id, user_id, encode(image, 'base64')
-                FROM art_submissions
-                WHERE card_id = $1 AND user_id = $2;
+                SELECT 
+                    art_submissions.id AS id, 
+                    art_submissions.card_id AS card_id,
+                    cards.name AS card_name,
+                    art_submissions.user_id AS user_id,
+                    users.credits_name AS credits_name,
+                    users.credits_url AS credits_url, 
+                    encode(art_submissions.image, 'base64')
+                FROM art_submissions 
+                LEFT JOIN users ON art_submissions.user_id = users.id
+                LEFT JOIN cards ON art_submissions.card_id = cards.id;
+                WHERE art_submissions.card_id = $1 AND art_submissions.user_id = $2;
             `
             const arguments = [cardID, userID];
 
