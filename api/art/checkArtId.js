@@ -1,11 +1,11 @@
 const artService = require('../../services/art');
+const { param } = require("express-validator");
 
-module.exports = async function checkArtId(req, res, next) {
+module.exports = async function checkArtId(req, res, next) {   
     try {
-        const artID = req.params.artID;
-        //todo: validate id here?
-        if (artID) {
-            const art = await artService.getById(artID);
+        param("artID").toInt();
+        if (req.params.artID) {
+            const art = await artService.getById(req.params.artID);
             if (art) {
                 req.art = art;
                 return next();

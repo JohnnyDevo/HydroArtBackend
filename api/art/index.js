@@ -7,6 +7,7 @@ const checkCardId = require('../cards/checkCardId');
 const checkUserId = require('../users/checkUserId');
 const checkArtId = require('../art/checkArtId');
 const { acceptFile, interpretFile } = require('../../services/acceptImage');
+const { body } = require("express-validator");
 
 const artRouter = router(); //mounted to '/art'. 
 
@@ -73,26 +74,31 @@ artRouter.get('/cards/:cardID/users/:userID', checkCardId, checkUserId, async (r
 
 //Users...
 //...can submit a new art piece
-artRouter.post('/', validateUser, acceptFile.single('submission'), interpretFile, async (req, res, next) => {
-    try {
-        if (!req.body.cardID) {
-            return res.status(401).send();
+artRouter.post('/',
+    validateUser,
+    acceptFile.single('submission'),
+    body("cardID").whitelist('a-zA-Z:_').trim(),
+    interpretFile,
+    async (req, res, next) => {
+        try {
+            if (!req.body.cardID) {
+                return res.status(401).send();
+            }
+            const card = await cardService.getByIds([req.body.cardID]);
+            if (!card) {
+                return res.status(404).send();
+            }
+            const art = await artService.create(req.body.cardID, req.user.id, req.file);
+            if (art) {
+                res.status(201).send(art);
+            } else {
+                console.warn('error occured when processing art');
+                next(new Error());
+            }
+        } catch (error) {
+            console.warn('error occured when submitting art');
+            next(error);
         }
-        const card = await cardService.getByIds([req.body.cardID]);
-        if (!card) {
-            return res.status(404).send();
-        }
-        const art = await artService.create(req.body.cardID, req.user.id, req.file);
-        if (art) {
-            res.status(201).send(art);
-        } else {
-            console.warn('error occured when processing art');
-            next(new Error());
-        }
-    } catch (error) {
-        console.warn('error occured when submitting art');
-        next(error);
-    }
 });
 
 //Art owners...

@@ -1,11 +1,11 @@
 const userService = require('../../services/users');
+const { param } = require("express-validator");
 
 module.exports = async function checkUserId(req, res, next) {
     try {
-        const userID = req.params.userID;
-        //todo: validate id here?
-        if (userID) {
-            const foundUser = await userService.findUser({ id: userID });
+        param("userID").toInt();
+        if (req.params.userID) {
+            const foundUser = await userService.findUser({ id: req.params.userID });
             if (foundUser) {
                 req.foundUser = foundUser;
                 return next();
