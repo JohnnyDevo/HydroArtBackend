@@ -147,6 +147,10 @@ usersRouter.post('/',
     body("credits_url").isURL().optional({ nullable: true, checkFalsy: true }),
     body("password").isLength({ min: 6 }),
     async (req, res, next) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
         if (!req.body.username || !req.body.password) {
             return res.status(400).send('Needs both a username and a password');
         }
