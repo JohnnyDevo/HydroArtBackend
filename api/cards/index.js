@@ -36,6 +36,17 @@ cardsRouter.get('/search', query('search').whitelist('a-zA-Z'), async (req, res,
     }
 });
 
+//...can retrieve a list of all card names
+cardsRouter.get('/names', async (req, res, next) => {
+    try {
+        const cards = await cardService.getAllNames();
+        res.status(200).json(cards);
+    } catch (error) {
+        console.warn('error occured when retrieving card information');
+        next(error);
+    }
+});
+
 //...can find all info relating to a card by ID
 cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
     try {
@@ -62,17 +73,6 @@ cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
             keywords: await keywords,
             swapsTo: swapsTo
         }); 
-    } catch (error) {
-        console.warn('error occured when retrieving card information');
-        next(error);
-    }
-});
-
-//...can retrieve a list of all card names
-cardsRouter.get('/names', async (req, res, next) => {
-    try {
-        const cards = await cardService.getAllNames();
-        res.status(200).json(cards);
     } catch (error) {
         console.warn('error occured when retrieving card information');
         next(error);
