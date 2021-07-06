@@ -78,5 +78,23 @@ module.exports = {
             console.warn('error occured during card retrieval');
             throw(error);
         }
+    },
+
+    getAllNames: async function() {
+        try {
+            const statement = `
+                SELECT id, name
+                FROM cards
+                ORDER BY name;
+            `
+
+            const result = await db.query(statement, []);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+        } catch (error) {
+            console.warn('error occured during card retrieval');
+            throw(error);
+        }
     }
 }

@@ -51,5 +51,10 @@ module.exports = {
             console.warn('invalid card ID');
             throw new Error();
         }
+    },
+
+    getAllNames: async function() {
+        const result = await cards.getAllNames();
+        return result;
     }
 }

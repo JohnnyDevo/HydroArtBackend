@@ -68,4 +68,15 @@ cardsRouter.get('/:cardID', checkCardId, async (req, res, next) => {
     }
 });
 
+//...can retrieve a list of all card names
+cardsRouter.get('/names', async (req, res, next) => {
+    try {
+        const cards = await cardService.getAllNames();
+        res.status(200).json(cards);
+    } catch (error) {
+        console.warn('error occured when retrieving card information');
+        next(error);
+    }
+});
+
 module.exports = cardsRouter;
