@@ -183,4 +183,22 @@ usersRouter.post('/',
         }
 });
 
+//...can check if a username is taken. name exists = 409, doesn't exist = 200
+usersRouter.get('/:username', async (req, res, next) => {
+    try {
+        if (req.params.username) {
+            return res.status(400).send("no username provided");
+        }
+        const existingUser = userService.findUser({ username: req.params.username });
+        if (existingUser) {
+            res.status(409).send("username is taken");
+        } else {
+            res.status(200).send();
+        }
+    } catch (error) {
+        console.warn('error when checking username');
+        next(error);
+    }
+});
+
 module.exports = usersRouter;
