@@ -82,11 +82,16 @@ module.exports = {
     },
 
     delete: async function(art) {
-        await artdb.deleteArtById(art.id);
-        const defaultArt = await artdb.getDefaultArtsByCardIds([art.card_id]);
-        if (!defaultArt) {
-            const arts = await artdb.getAllArtsByCardId(art.card_id);
-            artdb.setDefaultArt(art.card_id, arts[0].id);
+        const artsCard = await artdb.deleteArtById(art.id);
+        if (artsCard) {
+            console.log(artsCard);
+            const defaultArt = await artdb.getDefaultArtsByCardIds([artsCard])
+            if (!defaultArt) {
+                const arts = await artdb.getAllArtsByCardId(art.card_id);
+                if (arts) {
+                    artdb.setDefaultArt(art.card_id, arts[0].id);
+                }
+            }
         }
     }
 }

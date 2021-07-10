@@ -1,4 +1,5 @@
 const users = require("../../models/users");
+const artdb = require("../../models/art")
 const saltAndHash = require("../saltAndHash");
 
 module.exports = {
@@ -42,21 +43,39 @@ module.exports = {
             console.warn('needs both id and payload');
             throw new Error();
         }
-        const hash = await saltAndHash.makeHash(info.password, await saltAndHash.makeSalt());
         return await users.updateById(
             id,
             info.username, 
-            hash, 
+            info.hash, 
             info.credits_name,
             info.credits_url,
             info.contact_info
         );
     },
 
-    deleteUser: async function(id) {
+    deleteUser: async function(id, cascade) {
         if (!id) {
             console.warn('needs id');
             throw new Error();
+        }
+        if (cascade) {
+            const affectedCards = await artdb.deleteByUserId(id);
+            if (affectedCards) {
+                const cardArray = affectedCards.map(card => card.card_id);
+                const defaultArtArray = await artdb.getDefaultArtsByCardIds(cardArray);
+                if (defaultArtArray) {
+                    cardArray.filter(cardID => !defaultArtArray.includes(cardID));
+                }
+                for (const card in cardArray) {
+                    const cardID = cardArray[card];
+                    artdb.getAllArtsByCardId(cardID)
+                    .then(arts => {
+                        if (arts) {
+                            artdb.setDefaultArt(cardID, arts[0].id);
+                        }
+                    });
+                }
+            }
         }
         await users.deleteById(id);
     }

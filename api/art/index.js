@@ -105,7 +105,7 @@ artRouter.post('/',
 //...can delete an art piece by ID
 artRouter.delete('/:artID', validateUser, checkArtId, async (req, res, next) => {
     try {
-        if (req.foundUser.id !== req.art.user_id) {
+        if (req.user.id !== req.art.user_id) {
             return res.status(403).send();
         }
 
@@ -117,7 +117,7 @@ artRouter.delete('/:artID', validateUser, checkArtId, async (req, res, next) => 
             return res.status(401).send();
         }
         
-        await artService.delete(req.art.id);
+        await artService.delete(req.art);
         res.status(204).send();
     } catch (error) {
         console.warn('error occured when deleting art');

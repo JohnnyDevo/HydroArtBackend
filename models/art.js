@@ -10,13 +10,15 @@ module.exports = {
                 FROM art_submissions
                 WHERE id = $1;
             `
-            const result = await db.query(statement, []);
+            const arguments = [artID];
+
+            const result = await db.query(statement, arguments);
             if (result.rows?.length) {
                 return result.rows[0];
             }
 
         } catch (error) {
-            console.warn('error occured during card retrieval');
+            console.warn('error occured during art retrieval');
             throw(error);
         }
     },
@@ -225,12 +227,36 @@ module.exports = {
         try {
             const statement = `
                 DELETE FROM art_submissions
-                WHERE id = $1;
+                WHERE id = $1
+                RETURNING card_id;
             `
+            const arguments = [artID];
 
-            await db.query(statement, []);
+            const result = await db.query(statement, arguments);
+            if (result.rows?.length) {
+                return result.rows[0];
+            }
         } catch (error) {
             console.warn('error when deleting from art submissions');
+            throw(error);
+        }
+    },
+
+    deleteByUserId: async function(userID) {
+        try {
+            const statement = `
+                DELETE FROM art_submissions
+                WHERE user_id = $1
+                RETURNING card_id;
+            `
+            const arguments = [userID];
+
+            const result = await db.query(statement, arguments);
+            if (result.rows?.length) {
+                return result.rows;
+            }
+        } catch (error) {
+            console.warn('error when deleting art submissions');
             throw(error);
         }
     }

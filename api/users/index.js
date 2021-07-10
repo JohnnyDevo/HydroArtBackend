@@ -90,13 +90,13 @@ usersRouter.put('/',
                 }
 
                 //update user
-                const updatedUser = await users.updateById(
-                    req.body.username,
-                    hash,
-                    req.body.credits_name,
-                    req.body.credits_url,
-                    req.body.contact_info
-                );
+                const updatedUser = await userService.updateUser(req.user.id, {
+                    username: req.body.username,
+                    hash: hash,
+                    credits_name: req.body.credits_name,
+                    credits_url: req.body.credits_url,
+                    contact_info: req.body.contact_info
+                });
 
                 if (updatedUser) {
                     req.user.username = updatedUser.username;
@@ -124,15 +124,15 @@ usersRouter.delete('/', validateUser, async (req, res, next) => {
         const user = await userService.findUser({ id: req.user.id });
 
         //validate password
-        if (!req.body.old_password) {
-            return res.status(400).send('Password required to update account info');
+        if (!req.body.password) {
+            return res.status(400).send('Password required to delete');
         } else {
-            if (!userService.validatePassword(user, req.body.old_password)) {
-                res.status(401).send();
+            if (!userService.validatePassword(user, req.body.password)) {
+                return res.status(401).send();
             }
         }
-
-        await userService.deleteUser(req.user.id);
+        await userService.deleteUser(req.user.id, req.body.cascade);
+        await req.session.destroy();
         res.status(204).send();
     } catch (error) {
         console.warn('error during user deletion');

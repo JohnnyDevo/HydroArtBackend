@@ -69,7 +69,7 @@ module.exports = {
     updateById: async function(id, name, hash, credits_name, credits_url, contact_info) {
         try {
             const statement = `
-                UPDATE TABLE users
+                UPDATE users
                 SET username = $2,
                     password = $3,
                     credits_name = $4,
