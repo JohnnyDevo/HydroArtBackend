@@ -119,7 +119,7 @@ usersRouter.put('/',
 });
 
 //...can delete their own account
-usersRouter.delete('/', validateUser, async (req, res, next) => {
+usersRouter.delete('/', body("cascade").toBoolean(), validateUser, async (req, res, next) => {
     try {
         const user = await userService.findUser({ id: req.user.id });
 

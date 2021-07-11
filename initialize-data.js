@@ -46,11 +46,11 @@ const createKeywords = `
 const createArtSubmissions = `
     CREATE TABLE IF NOT EXISTS art_submissions (
         id SERIAL PRIMARY KEY,
-        card_id varchar(100) NOT NULL,
-        user_id integer NOT NULL,
+        card_id varchar(100),
+        user_id integer,
         image bytea NOT NULL,
-        FOREIGN KEY (card_id) REFERENCES cards(id),
-        FOREIGN KEY (user_id) REFERENCES users(id)
+        FOREIGN KEY (card_id) REFERENCES cards(id) ON DELETE SET NULL,
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
     )
 `
 
