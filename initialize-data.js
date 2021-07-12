@@ -80,6 +80,18 @@ const createRarityOrder = `
     )
 `
 
+const createComments = `
+    CREATE TABLE IF NOT EXISTS comments (
+        id SERIAL PRIMARY KEY,
+        category varchar(30) NOT NULL,
+        message text,
+        user_id integer NOT NULL,
+        card_id varchar(100),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+        FOREIGN KEY (card_id) REFERENCES cards(id) ON DELETE SET NULL
+    )
+`
+
 const addKeyword = `
     INSERT INTO keywords
     VALUES ($1, $2, $3)
@@ -158,6 +170,9 @@ async function execute() {
 
         console.log(`    defining rarity orders`);
         await db.query(addRarityOrder, []);
+
+        console.log(`creating table "comments"`)
+        await db.query(createComments, []);
 
         console.log("reading keyword data from .json");
         const keywordData = JSON.parse(fs.readFileSync('./exports/hydro-keywords.json'));
