@@ -129,7 +129,8 @@ const addRarityOrder = `
         (2, 'COMMON'),
         (3, 'UNCOMMON'),
         (4, 'RARE'),
-        (5, 'SPECIAL');
+        (5, 'SPECIAL')
+    ON CONFLICT DO NOTHING;
 `
 
 async function execute() {
