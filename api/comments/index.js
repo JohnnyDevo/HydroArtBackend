@@ -15,7 +15,7 @@ commentsRouter.post('/',
         try {
             let card;
             if (req.body.cardID) {
-                const cards = await cardService.getCardsByIds([req.body.cardID]);
+                const cards = await cardService.getByIds([req.body.cardID]);
                 if (cards) {
                     card = cards[0];
                 } else {
