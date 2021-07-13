@@ -11,7 +11,7 @@ const commentsRouter = router(); //mounted to '/comments'
 commentsRouter.post('/', 
     validateUser,
     body("cardID").whitelist('a-zA-Z:_').trim().optional(),
-    (req, res, next) => {
+    async (req, res, next) => {
         try {
             let card;
             if (req.body.cardID) {
