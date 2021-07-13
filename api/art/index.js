@@ -90,7 +90,7 @@ artRouter.post('/',
             }
             const art = await artService.create(req.body.cardID, req.user.id, req.file);
             if (art) {
-                res.status(201).send(art);
+                res.status(201).json(art);
             } else {
                 console.warn('error occured when processing art');
                 next(new Error());
