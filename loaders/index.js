@@ -2,6 +2,7 @@ const { expressLoader } = require('./loadExpress');
 const { authLoader } = require('./loadAuth');
 const { sessionLoader } = require('./loadSession');
 const { routesLoader } = require('./loadRoutes');
+const { errorHandler } = require('./errorHandler');
 
 module.exports = {
     init: function() {
@@ -16,6 +17,9 @@ module.exports = {
 
         routesLoader(app);
         console.log('Routes Initialized');
+
+        errorHandler(app);
+        console.log('Error Handling Initialized');
 
         return app;
     }
